@@ -1,0 +1,2121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <title>fonts</title>
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="border d-flex align-items-center px-xl-4">
+        <div class="d-flex align-items-center justify-content-between justify-content-xl-around fw-bold h-100 w-100">
+            <a class="h1 fw-bold ps-4 ps-xl-0 text-decoration-none logoName w-25">
+            Fontshare<sup class="h6 fw-bold">TM</sup>
+            </a>
+            <div class="menu h-100 d-xl-flex d-none w-50">
+                <div class="p-5 position-relative overflow-hidden h-100 border-start d-flex align-items-center justify-content-center">
+                    <div class="position-absolute overlay h-100"></div>
+                    <a class="d-flex fontPage justify-content-center align-items-center text-decoration-none">
+                    Fonts
+                       <p class="position-absolute bottom-0" style="left: 14px">100</p>
+                    </a>
+                </div>
+                <div class="p-5 position-relative overflow-hidden h-100 border-start d-flex align-items-center justify-content-center">
+                    <div class="position-absolute overlay h-100"></div>
+                    <a class="d-flex fontPage justify-content-center align-items-center text-decoration-none">
+                    pairs
+                       <p class="position-absolute bottom-0" style="left: 14px">49</p>
+                    </a>
+                </div>
+                <div class="p-5 position-relative overflow-hidden h-100 border-start d-flex align-items-center justify-content-center">
+                    <div class="position-absolute overlay h-100"></div>
+                    <a class="d-flex fontPage justify-content-center align-items-center text-decoration-none">
+                        Licenses
+                    </a>
+                </div>
+                <div class="p-5 position-relative overflow-hidden h-100 border-start border-end d-flex align-items-center justify-content-center">
+                    <div class="position-absolute overlay h-100"></div>
+                    <a class="d-flex fontPage justify-content-center align-items-center text-decoration-none">
+                        <svg width="53" height="16" viewBox="0 0 53 16"><path pid="0" fill="currentColor" d="M0 3h53V0H0zM0 16h53v-3H0z"></path></svg>
+                    </a>
+                </div>
+            </div>
+            <p class="mb-0 d-xl-flex d-none justify-content-center align-items-center text-secondary fw-bold w-25">
+                No styles selected
+            </p>
+            <div class="h-100 d-xl-none d-flex">
+                <div class="position-relative overflow-hidden h-100 px-4 w-auto border-start border-start d-flex align-items-center justify-content-center">
+                    <a class="d-flex text-secondary fontPage justify-content-center align-items-center text-decoration-none">
+                    0
+                    </a>
+                </div>
+                <div class=" h-100 d-xl-none d-flex">
+                    <div onclick="menuItems(this)" class="position-relative overflow-hidden h-100 px-4 w-auto border-start border-end d-flex align-items-center justify-content-center">
+                        <div class="position-absolute overlay h-100"></div>
+                        <a class="d-flex fontPage justify-content-center align-items-center text-decoration-none">
+                            <svg onclick="activeScroll()" class="HamIcon" width="24" height="16" viewBox="0 0 53 16"><path pid="0" fill="currentColor" d="M0 3h53V0H0zM0 16h53v-3H0z"></path></svg>
+                            <svg onclick="removeScroll()" class="close" width="19" height="19" viewBox="0 0 19 19"><path pid="0" fill="currentColor" d="M0 16.97L16.97 0l1.41 1.41L1.41 18.38z"></path><path pid="1" fill="currentColor" d="M1.41 0l16.97 16.97-1.41 1.41L0 1.41z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="d-flex px-3 px-md-0 align-items-center position-sticky top-0 bg-white justify-content-between border-bottom w-100" style="height: 76px;z-index: 99;">
+        <a class="d-flex gap-3 text-decoration-none text-dark btn align-items-center goBack justify-content-center py-4 px-5">
+            <svg width="36" height="8" viewBox="0 0 36 8" style="--icon-width:3.6rem; --icon-height:0.8rem;"><path pid="0" d="M.65 3.65a.5.5 0 000 .7l3.18 3.19a.5.5 0 10.7-.71L1.72 4l2.83-2.83a.5.5 0 10-.71-.7L.65 3.64zM36 3.5H1v1h35v-1z" fill="currentColor"></path></svg>
+            <p class="mb-0 d-lg-block d-none fw-bold">Back to Fonts</p>
+            <p class="d-lg-none d-none fw-bold d-sm-block mb-0">Go Back</p>
+        </a>
+        <ul class="list-unstyled fw-bold secondMenu h-100 m-0 d-flex align-items-center justify-content-center gap-lg-5">
+            <li class="h-100">
+                <a class="btn h-100 d-flex align-items-center fw-bold" href="#Styles">Styles</a>
+            </li>
+
+            <li class="h-100">
+                <a class="btn h-100 d-flex align-items-center fw-bold" href="#Glyphs">Glyphs</a>
+            </li>
+
+            <li class="h-100 d-none d-lg-block">
+                <a class="btn h-100 d-flex align-items-center fw-bold" href="#Layouts">Layouts</a>
+            </li>
+
+            <li class="h-100">
+                <a class="btn h-100 d-flex align-items-center fw-bold" href="#Details">Details</a>
+            </li>
+
+            <li class="h-100">
+                <a class="btn h-100 d-flex align-items-center fw-bold" href="#License">License</a>
+            </li>
+        </ul>
+        <a class="d-md-flex d-none gap-3 goBack text-decoration-none text-dark btn align-items-center justify-content-center border-start py-4 px-5">
+            <svg class="d-lg-block d-none" width="16" height="20" viewBox="0 0 16 20" style="--icon-width:1.6rem; --icon-height:2rem;"><path pid="0" d="M7.65 18.35c.2.2.5.2.7 0l3.19-3.18a.5.5 0 10-.71-.7L8 17.28l-2.83-2.83a.5.5 0 10-.7.71l3.18 3.18zM7.5 0v18h1V0h-1zM0 20h16v-1H0z" fill="currentColor"></path></svg>
+            <p class="mb-0 fw-bold">Download Family</p>
+        </a>
+    </div>
+
+    <!-- main -->
+
+    <main class="mt-3 px-xl-5 px-3">
+        <div class="fw-bold border-bottom py-4">
+            <div class="d-flex align-items-center justify-content-between w-100" style="font-size: 12px;">
+                <div class="w-75 d-flex align-items-center gap-5 justify-content-between justify-content-md-start">
+                    <div class="d-flex align-items-center gap-2">
+                        <p class="mb-0">Satoshi</p>
+                        <svg width="10" height="10" viewBox="0 0 10 10" class="_5yCMESpN Ax8XzFBn _4sLi4ZFx" style="--icon-width:1rem; --icon-height:1rem;"><path pid="0" d="M4.53.88a.5.5 0 01.94 0l.48 1.36c.2.6.75 1 1.38 1l1.44.04a.5.5 0 01.3.9l-1.15.87a1.5 1.5 0 00-.53 1.63l.41 1.37a.5.5 0 01-.76.56l-1.18-.82a1.5 1.5 0 00-1.72 0l-1.18.82a.5.5 0 01-.76-.56l.41-1.37a1.5 1.5 0 00-.53-1.63L.94 4.18a.5.5 0 01.29-.9l1.44-.03a1.5 1.5 0 001.38-1L4.53.87z" stroke="var(--stroke-color, currentColor)" fill="var(--fill-color, transparent)"></path></svg>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-end justify-content-lg-around rightCardHeader">
+                        <div class="d-flex align-items-center gap-4">
+                            <p class="mb-0">12 styles</p>
+                            <p class="mb-0">Variable</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="display-1 baseText fw-bold mt-5">Satoshi</p>
+            <div class="d-flex align-items-center justify-content-between fwDesigned fw-bold" style="font-size: 12px;margin-top: 272px;">
+                <div>
+                    <a class="mb-0 text-decoration-underline btn text-dark">Designed By Indian Type Foundry</a>
+                </div>
+                <div class="d-flex align-items-center gap-5">
+                    <a class="mb-0 d-none d-xl-block text-decoration-underline btn text-dark">Closed Source</a>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <div>
+            <!--  -->
+            <h3 class="my-5 py-5" id="Styles">10 Styles</h3>
+            <form class="d-xl-flex d-none align-items-center justify-content-between w-100" style="position: sticky;
+            top: 76px;
+            background: white;
+            z-index: 9;">
+                <div class="yourTextParent d-block d-xl-flex align-items-center">
+                    <div class="position-relative w-25">
+                        <svg class="position-absolute" width="13" height="13" viewBox="0 0 13 13" heigh="13" style="left: 6px;top: 22px;--icon-width:1.3rem; --icon-height:1.3rem;"><path pid="0" d="M12.63 2.34L10.66.37a1.25 1.25 0 00-1.78 0L.63 8.62a.5.5 0 00-.15.3l-.47 3.5a.5.5 0 00.56.58l3.52-.48a.5.5 0 00.29-.15l8.25-8.25a1.25 1.25 0 000-1.78zm-8.85 9.2l-2.68.36.36-2.68 5.85-5.85 2.32 2.32-5.85 5.85zm8.14-8.13l-1.57 1.56-2.32-2.32L9.59 1.1a.25.25 0 01.35 0l1.98 1.97a.25.25 0 010 .35z" fill="currentColor"></path></svg>
+                        <input class="border-0 ps-4 py-3 fw-bold" oninput="yourText(this)" placeholder="Your Text" style="outline: none">
+                    </div>
+                    <div class="d-flex align-items-center btns gap-4 cityName">
+                        <p class="mb-0 fw-bold" data-id="Cities">Cities</p>
+                        <p class="mb-0 fw-bold" data-id="Excerpts">Excerpts</p>
+                        <p class="mb-0 fw-bold active" data-id="Names">Names</p>
+                    </div>
+                    <div class="d-flex align-items-center gap-4 changeAllSize">
+                        <div class="position-relative">
+                            <div class="d-flex align-items-center gap-3 dropdownTitle listTitle fontSizeTitle fw-bold">
+                                <p class="mb-0"><span class="SingleInputValue">39</span>px</p>
+                                <svg width="7" height="5" viewBox="0 0 7 5" class="k7I8K9fJ arrow" style="--icon-width:0.7rem; --icon-height:0.5rem;"><path pid="0" d="M3.5 5L0 0h7L3.5 5z" fill="currentColor"></path></svg>
+                            </div>
+                            <div class="position-absolute card pt-5 pb-3 px-2 dropdownList lists2 lists fw-bold" style="height: 400px;overflow-y: auto;width: 114px;">
+                                <div class="position-relative w-100">
+                                    <div class="mb-0 position-absolute d-flex align-items-center gap-3 activeDropdownTitle" style="top: -34px;left: 12px;">
+                                        <p class="mb-0"><span class="SingleInputValue">39</span>px</p>
+                                        <svg width="7" height="5" viewBox="0 0 7 5" class="k7I8K9fJ arrow" style="--icon-width:0.7rem; --icon-height:0.5rem;transform: rotate(0deg);"><path pid="0" d="M3.5 5L0 0h7L3.5 5z" fill="currentColor"></path></svg>
+                                    </div>
+                                    <ul class="p-0 m-0">
+                                        <li class="d-flex align-items-center gap-3 position-relative" data-size="">
+                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                            <div class="radioShape rounded-circle border-2 border active"></div>
+                                            <p class="mb-0"><span class="SingleInputValue">39</span>px</p>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3 position-relative fontSize" data-size="8">
+                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                            <p class="mb-0">8px</p>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3 position-relative fontSize" data-size="12">
+                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                            <p class="mb-0">12px</p>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3 position-relative fontSize" data-size="14">
+                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                            <p class="mb-0">14px</p>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3 position-relative fontSize" data-size="20">
+                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                            <p class="mb-0">20px</p>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3 position-relative fontSize" data-size="24">
+                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                            <p class="mb-0">24px</p>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3 position-relative fontSize" data-size="32">
+                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                            <p class="mb-0">32px</p>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3 position-relative fontSize" data-size="40">
+                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                            <p class="mb-0">40px</p>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3 position-relative fontSize" data-size="50">
+                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                            <p class="mb-0">50px</p>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3 position-relative fontSize" data-size="64">
+                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                            <p class="mb-0">64px</p>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3 position-relative fontSize" data-size="96">
+                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                            <p class="mb-0">96px</p>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3 position-relative fontSize" data-size="120">
+                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                            <p class="mb-0">120px</p>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3 position-relative fontSize" data-size="184">
+                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                            <p class="mb-0">184px</p>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3 position-relative fontSize" data-size="280">
+                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                            <p class="mb-0">280px</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <input class="d-xl-block d-none" type="range" min="8" max="280" value="39" oninput="changeAllSize(this)">
+                    </div>
+                </div>
+                <div class="darkJustify d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-4 justify">
+                        <svg width="24" data-justify="left" height="9" viewBox="0 0 24 9" class="r-3q8I46 yGdWljes active" style="--icon-width:2.4rem; --icon-height:0.9rem;"><path pid="0" fill="currentColor" d="M0 0h24v1H0zM0 4h16v1H0zM0 8h24v1H0z"></path></svg>
+                        <svg width="24" data-justify="center" height="9" viewBox="0 0 24 9" class="r-3q8I46" style="--icon-width:2.4rem; --icon-height:0.9rem;"><path pid="0" fill="currentColor" d="M0 0h24v1H0zM4 4h16v1H4zM0 8h24v1H0z"></path></svg>
+                        <svg width="24" data-justify="right" height="9" viewBox="0 0 24 9" class="r-3q8I46" style="--icon-width:2.4rem; --icon-height:0.9rem;"><path pid="0" fill="currentColor" d="M0 0h24v1H0zM8 4h16v1H8zM0 8h24v1H0z"></path></svg>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <div class="position-relative">
+                            <div class="themes">
+                                <div class="selectedTheme mx-auto border-2 border border-dark rounded-circle"></div>
+                            </div>
+                            <div class="position-absolute w-100 flex-column gap-1 card px-1 py-2 themeItems bg-transparent">
+                                <div class="selectedTheme border-2 border border-dark rounded-circle" data-value="#FFCFCF" style="background-color: #FFCFCF;"></div>
+                                <div class="selectedTheme border-2 border border-dark rounded-circle" data-value="#FFF1B5" style="background-color: #FFF1B5;"></div>
+                                <div class="selectedTheme border-2 border border-dark rounded-circle" data-value="#C4FDC7" style="background-color: #C4FDC7;"></div>
+                                <div class="selectedTheme border-2 border border-dark rounded-circle" data-value="#BAFBFF" style="background-color: #E2FCFC;"></div>
+                                <div class="selectedTheme border-2 border border-dark rounded-circle" data-value="white" style="background-color: white;"></div>
+                            </div>
+                        </div>
+
+                        <div class="darkMode d-flex align-items-center border-2 border border-dark rounded-circle overflow-hidden" onclick="darkmode()">
+                            <div class="bg-white w-50 h-100"></div>
+                            <div class="bg-dark w-50 h-100"></div>
+                        </div>
+                    </div>
+                    <p class="mb-0 fw-bold reset d-none d-xl-block">Reset All</p>
+                </div>
+            </form>
+            <!--  -->
+            <div class="tabContent tabContentOne">
+                <div class="cards mt-4 fontsCard" id="cards">
+                    <div class="p-4 card fw-bold">
+                        <div class="d-flex align-items-center justify-content-between w-100" style="font-size: 12px;">
+                            <div class="w-75 d-flex align-items-center gap-5">
+                                <div class="d-flex align-items-center gap-2">
+                                    <p class="mb-0">Light</p>
+                                </div>
+                                <div class="align-items-center gap-5 w-75 hoverShow">
+
+                                    <div class="d-flex align-items-center w-25 gap-4 rangeInputCard">
+                                        <div class="position-relative">
+                                            <div class="d-flex align-items-center gap-3 dropdownTitle fontSizeTitle fw-bold">
+                                                <p class="mb-0 inputTitle">Size</p>
+                                                <p class="mb-0 weightVlue"><span class="inputValue">39</span><span>px</span></p>
+                                            </div>
+                                        </div>
+                                        <input type="range" min="8" max="280" class="sizeInput" value="39">
+                                    </div>
+                                    <div class="align-items-center w-25 gap-4 rangeInputCard">
+                                        <div class="position-relative">
+                                            <div class="d-flex align-items-center gap-3 dropdownTitle fontSizeTitle fw-bold w-25">
+                                                <p class="mb-0 inputTitle">leading</p>
+                                                <p class="mb-0 weightVlue"><span class="leadingValue">1.2</span><span>em</span></p>
+                                            </div>
+                                        </div>
+                                        <input type="range" min="0.5" max="3" step="0.1" value="1.2" class="leadingInput">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-end rightCardHeader">
+                                <p class="mb-0 fw-bold btn">+Add Style</p>
+                            </div>
+                        </div>
+                        <textarea class="my-3 typedText textAreas Cities bg-transparent border-0 lightStyle" data-id="Cities">La Paz</textarea>
+                        <textarea class="my-3 typedText textAreas Excerpts bg-transparent border-0 lightStyle" data-id="Excerpts">Everybody is identical in their secret unspoken belief that way deep down they are different from everyone else.
+                    </textarea>
+                        <textarea class="my-3 typedText textAreas Names bg-transparent border-0 lightStyle" data-id="Names">Light</textarea>
+                    </div>
+                    <div class="p-4 card fw-bold">
+                        <div class="d-flex align-items-center justify-content-between w-100" style="font-size: 12px;">
+                            <div class="w-75 d-flex align-items-center gap-5">
+                                <div class="d-flex align-items-center gap-2">
+                                    <p class="mb-0">Light Italic</p>
+                                </div>
+                                <div class="align-items-center gap-5 w-75 hoverShow">
+                                    <div class="d-flex align-items-center w-25 gap-4 rangeInputCard">
+                                        <div class="position-relative">
+                                            <div class="d-flex align-items-center gap-3 dropdownTitle fontSizeTitle fw-bold">
+                                                <p class="mb-0 inputTitle">Size</p>
+                                                <p class="mb-0 weightVlue"><span class="inputValue">39</span><span>px</span></p>
+                                            </div>
+                                        </div>
+                                        <input type="range" min="8" max="280" class="sizeInput" value="39">
+                                    </div>
+                                    <div class="align-items-center w-25 gap-4 rangeInputCard">
+                                        <div class="position-relative">
+                                            <div class="d-flex align-items-center gap-3 dropdownTitle fontSizeTitle fw-bold w-25">
+                                                <p class="mb-0 inputTitle">leading</p>
+                                                <p class="mb-0 weightVlue"><span class="leadingValue">1.2</span><span>em</span></p>
+                                            </div>
+                                        </div>
+                                        <input type="range" min="0.5" max="3" step="0.1" value="1.2" class="leadingInput">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-end rightCardHeader">
+                                <p class="mb-0 fw-bold btn">+Add Style</p>
+                            </div>
+                        </div>
+                        <textarea class="my-3 typedText textAreas Cities bg-transparent border-0 lightItalic" data-id="Cities">La Paz</textarea>
+                        <textarea class="my-3 typedText textAreas Excerpts bg-transparent border-0 lightItalic" data-id="Excerpts">Everybody is identical in their secret unspoken belief that way deep down they are different from everyone else.
+                        </textarea>
+                        <textarea class="my-3 typedText textAreas Names bg-transparent border-0 lightItalic" data-id="Names">Light Italic</textarea>
+                    </div>
+                    <div class="p-4 card fw-bold">
+                        <div class="d-flex align-items-center justify-content-between w-100" style="font-size: 12px;">
+                            <div class="w-75 d-flex align-items-center gap-5">
+                                <div class="d-flex align-items-center gap-2">
+                                    <p class="mb-0">Regular</p>
+                                </div>
+                                <div class="align-items-center gap-5 w-75 hoverShow">
+
+                                    <div class="d-flex align-items-center w-25 gap-4 rangeInputCard">
+                                        <div class="position-relative">
+                                            <div class="d-flex align-items-center gap-3 dropdownTitle fontSizeTitle fw-bold">
+                                                <p class="mb-0 inputTitle">Size</p>
+                                                <p class="mb-0 weightVlue"><span class="inputValue">39</span><span>px</span></p>
+                                            </div>
+                                        </div>
+                                        <input type="range" min="8" max="280" class="sizeInput" value="39">
+                                    </div>
+                                    <div class="align-items-center w-25 gap-4 rangeInputCard">
+                                        <div class="position-relative">
+                                            <div class="d-flex align-items-center gap-3 dropdownTitle fontSizeTitle fw-bold w-25">
+                                                <p class="mb-0 inputTitle">leading</p>
+                                                <p class="mb-0 weightVlue"><span class="leadingValue">1.2</span><span>em</span></p>
+                                            </div>
+                                        </div>
+                                        <input type="range" min="0.5" max="3" step="0.1" value="1.2" class="leadingInput">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-end rightCardHeader">
+                                <p class="mb-0 fw-bold btn">+Add Style</p>
+                            </div>
+                        </div>
+                        <textarea class="my-3 typedText textAreas Cities bg-transparent border-0 regular" data-id="Cities">La Paz</textarea>
+                        <textarea class="my-3 typedText textAreas Excerpts bg-transparent border-0 regular" data-id="Excerpts">Everybody is identical in their secret unspoken belief that way deep down they are different from everyone else.
+                    </textarea>
+                        <textarea class="my-3 typedText textAreas Names bg-transparent border-0 regular" data-id="Names">Regular</textarea>
+                    </div>
+                    <div class="p-4 card fw-bold">
+                        <div class="d-flex align-items-center justify-content-between w-100" style="font-size: 12px;">
+                            <div class="w-75 d-flex align-items-center gap-5">
+                                <div class="d-flex align-items-center gap-2">
+                                    <p class="mb-0">Italic</p>
+                                </div>
+                                <div class="align-items-center gap-5 w-75 hoverShow">
+
+                                    <div class="d-flex align-items-center w-25 gap-4 rangeInputCard">
+                                        <div class="position-relative">
+                                            <div class="d-flex align-items-center gap-3 dropdownTitle fontSizeTitle fw-bold">
+                                                <p class="mb-0 inputTitle">Size</p>
+                                                <p class="mb-0 weightVlue"><span class="inputValue">39</span><span>px</span></p>
+                                            </div>
+                                        </div>
+                                        <input type="range" min="8" max="280" class="sizeInput" value="39">
+                                    </div>
+                                    <div class="align-items-center w-25 gap-4 rangeInputCard">
+                                        <div class="position-relative">
+                                            <div class="d-flex align-items-center gap-3 dropdownTitle fontSizeTitle fw-bold w-25">
+                                                <p class="mb-0 inputTitle">leading</p>
+                                                <p class="mb-0 weightVlue"><span class="leadingValue">1.2</span><span>em</span></p>
+                                            </div>
+                                        </div>
+                                        <input type="range" min="0.5" max="3" step="0.1" value="1.2" class="leadingInput">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-end rightCardHeader">
+                                <p class="mb-0 fw-bold btn">+Add Style</p>
+                            </div>
+                        </div>
+                        <textarea class="my-3 typedText textAreas Cities bg-transparent border-0 italic" data-id="Cities">La Paz</textarea>
+                        <textarea class="my-3 typedText textAreas Excerpts bg-transparent border-0 italic" data-id="Excerpts">Everybody is identical in their secret unspoken belief that way deep down they are different from everyone else.
+                    </textarea>
+                        <textarea class="my-3 typedText textAreas Names bg-transparent border-0 italic" data-id="Names">Italic</textarea>
+                    </div>
+                    <div class="p-4 card fw-bold">
+                        <div class="d-flex align-items-center justify-content-between w-100" style="font-size: 12px;">
+                            <div class="w-75 d-flex align-items-center gap-5">
+                                <div class="d-flex align-items-center gap-2">
+                                    <p class="mb-0">Medium</p>
+                                </div>
+                                <div class="align-items-center gap-5 w-75 hoverShow">
+
+                                    <div class="d-flex align-items-center w-25 gap-4 rangeInputCard">
+                                        <div class="position-relative">
+                                            <div class="d-flex align-items-center gap-3 dropdownTitle fontSizeTitle fw-bold">
+                                                <p class="mb-0 inputTitle">Size</p>
+                                                <p class="mb-0 weightVlue"><span class="inputValue">39</span><span>px</span></p>
+                                            </div>
+                                        </div>
+                                        <input type="range" min="8" max="280" class="sizeInput" value="39">
+                                    </div>
+                                    <div class="align-items-center w-25 gap-4 rangeInputCard">
+                                        <div class="position-relative">
+                                            <div class="d-flex align-items-center gap-3 dropdownTitle fontSizeTitle fw-bold w-25">
+                                                <p class="mb-0 inputTitle">leading</p>
+                                                <p class="mb-0 weightVlue"><span class="leadingValue">1.2</span><span>em</span></p>
+                                            </div>
+                                        </div>
+                                        <input type="range" min="0.5" max="3" step="0.1" value="1.2" class="leadingInput">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-end rightCardHeader">
+                                <p class="mb-0 fw-bold btn">+Add Style</p>
+                            </div>
+                        </div>
+                        <textarea class="my-3 typedText textAreas Cities bg-transparent border-0 medium" data-id="Cities">La Paz</textarea>
+                        <textarea class="my-3 typedText textAreas Excerpts bg-transparent border-0 medium" data-id="Excerpts">Everybody is identical in their secret unspoken belief that way deep down they are different from everyone else.
+                    </textarea>
+                        <textarea class="my-3 typedText textAreas Names bg-transparent border-0 medium" data-id="Names">Medium</textarea>
+                    </div>
+                    <div class="p-4 card fw-bold">
+                        <div class="d-flex align-items-center justify-content-between w-100" style="font-size: 12px;">
+                            <div class="w-75 d-flex align-items-center gap-5">
+                                <div class="d-flex align-items-center gap-2">
+                                    <p class="mb-0">Medium Italic</p>
+                                </div>
+                                <div class="align-items-center gap-5 w-75 hoverShow">
+                                    <div class="d-flex align-items-center w-25 gap-4 rangeInputCard">
+                                        <div class="position-relative">
+                                            <div class="d-flex align-items-center gap-3 dropdownTitle fontSizeTitle fw-bold">
+                                                <p class="mb-0 inputTitle">Size</p>
+                                                <p class="mb-0 weightVlue"><span class="inputValue">39</span><span>px</span></p>
+                                            </div>
+                                        </div>
+                                        <input type="range" min="8" max="280" class="sizeInput" value="39">
+                                    </div>
+                                    <div class="align-items-center w-25 gap-4 rangeInputCard">
+                                        <div class="position-relative">
+                                            <div class="d-flex align-items-center gap-3 dropdownTitle fontSizeTitle fw-bold w-25">
+                                                <p class="mb-0 inputTitle">leading</p>
+                                                <p class="mb-0 weightVlue"><span class="leadingValue">1.2</span><span>em</span></p>
+                                            </div>
+                                        </div>
+                                        <input type="range" min="0.5" max="3" step="0.1" value="1.2" class="leadingInput">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-end rightCardHeader">
+                                <p class="mb-0 fw-bold btn">+Add Style</p>
+                            </div>
+                        </div>
+                        <textarea class="my-3 typedText textAreas Cities bg-transparent border-0 mediumItalic" data-id="Cities">La Paz</textarea>
+                        <textarea class="my-3 typedText textAreas Excerpts bg-transparent border-0 mediumItalic" data-id="Excerpts">Everybody is identical in their secret unspoken belief that way deep down they are different from everyone else.
+                    </textarea>
+                        <textarea class="my-3 typedText textAreas Names bg-transparent border-0 mediumItalic" data-id="Names">Medium Italic</textarea>
+                    </div>
+                    <div class="p-4 card fw-bold">
+                        <div class="d-flex align-items-center justify-content-between w-100" style="font-size: 12px;">
+                            <div class="w-75 d-flex align-items-center gap-5">
+                                <div class="d-flex align-items-center gap-2">
+                                    <p class="mb-0">Bold</p>
+                                </div>
+                                <div class="align-items-center gap-5 w-75 hoverShow">
+
+                                    <div class="d-flex align-items-center w-25 gap-4 rangeInputCard">
+                                        <div class="position-relative">
+                                            <div class="d-flex align-items-center gap-3 dropdownTitle fontSizeTitle fw-bold">
+                                                <p class="mb-0 inputTitle">Size</p>
+                                                <p class="mb-0 weightVlue"><span class="inputValue">39</span><span>px</span></p>
+                                            </div>
+                                        </div>
+                                        <input type="range" min="8" max="280" class="sizeInput" value="39">
+                                    </div>
+                                    <div class="align-items-center w-25 gap-4 rangeInputCard">
+                                        <div class="position-relative">
+                                            <div class="d-flex align-items-center gap-3 dropdownTitle fontSizeTitle fw-bold w-25">
+                                                <p class="mb-0 inputTitle">leading</p>
+                                                <p class="mb-0 weightVlue"><span class="leadingValue">1.2</span><span>em</span></p>
+                                            </div>
+                                        </div>
+                                        <input type="range" min="0.5" max="3" step="0.1" value="1.2" class="leadingInput">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-end rightCardHeader">
+                                <p class="mb-0 fw-bold btn">+Add Style</p>
+                            </div>
+                        </div>
+                        <textarea class="my-3 typedText textAreas Cities bg-transparent border-0 fw-bold" data-id="Cities">La Paz</textarea>
+                        <textarea class="my-3 typedText textAreas Excerpts bg-transparent border-0 fw-bold" data-id="Excerpts">Everybody is identical in their secret unspoken belief that way deep down they are different from everyone else.
+                    </textarea>
+                        <textarea class="my-3 typedText textAreas Names bg-transparent border-0 fw-bold" data-id="Names">Bold</textarea>
+                    </div>
+                    <div class="p-4 card fw-bold">
+                        <div class="d-flex align-items-center justify-content-between w-100" style="font-size: 12px;">
+                            <div class="w-75 d-flex align-items-center gap-5">
+                                <div class="d-flex align-items-center gap-2">
+                                    <p class="mb-0">Bold Italic</p>
+                                </div>
+                                <div class="align-items-center gap-5 w-75 hoverShow">
+
+                                    <div class="d-flex align-items-center w-25 gap-4 rangeInputCard">
+                                        <div class="position-relative">
+                                            <div class="d-flex align-items-center gap-3 dropdownTitle fontSizeTitle fw-bold">
+                                                <p class="mb-0 inputTitle">Size</p>
+                                                <p class="mb-0 weightVlue"><span class="inputValue">39</span><span>px</span></p>
+                                            </div>
+                                        </div>
+                                        <input type="range" min="8" max="280" class="sizeInput" value="39">
+                                    </div>
+                                    <div class="align-items-center w-25 gap-4 rangeInputCard">
+                                        <div class="position-relative">
+                                            <div class="d-flex align-items-center gap-3 dropdownTitle fontSizeTitle fw-bold w-25">
+                                                <p class="mb-0 inputTitle">leading</p>
+                                                <p class="mb-0 weightVlue"><span class="leadingValue">1.2</span><span>em</span></p>
+                                            </div>
+                                        </div>
+                                        <input type="range" min="0.5" max="3" step="0.1" value="1.2" class="leadingInput">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-end rightCardHeader">
+                                <p class="mb-0 fw-bold btn">+Add Style</p>
+                            </div>
+                        </div>
+                        <textarea class="my-3 typedText textAreas Cities bg-transparent border-0 fst-italic fw-bold" data-id="Cities">La Paz</textarea>
+                        <textarea class="my-3 typedText textAreas Excerpts bg-transparent border-0 fst-italic fw-bold" data-id="Excerpts">Everybody is identical in their secret unspoken belief that way deep down they are different from everyone else.
+                    </textarea>
+                        <textarea class="my-3 typedText textAreas Names bg-transparent border-0 fst-italic fw-bold" data-id="Names">Bold Italic</textarea>
+                    </div>
+                    <div class="p-4 card fw-bold">
+                        <div class="d-flex align-items-center justify-content-between w-100" style="font-size: 12px;">
+                            <div class="w-75 d-flex align-items-center gap-5">
+                                <div class="d-flex align-items-center gap-2">
+                                    <p class="mb-0">Black</p>
+                                </div>
+                                <div class="align-items-center gap-5 w-75 hoverShow">
+                                    <div class="d-flex align-items-center w-25 gap-4 rangeInputCard">
+                                        <div class="position-relative">
+                                            <div class="d-flex align-items-center gap-3 dropdownTitle fontSizeTitle fw-bold">
+                                                <p class="mb-0 inputTitle">Size</p>
+                                                <p class="mb-0 weightVlue"><span class="inputValue">39</span><span>px</span></p>
+                                            </div>
+                                        </div>
+                                        <input type="range" min="8" max="280" class="sizeInput" value="39">
+                                    </div>
+                                    <div class="align-items-center w-25 gap-4 rangeInputCard">
+                                        <div class="position-relative">
+                                            <div class="d-flex align-items-center gap-3 dropdownTitle fontSizeTitle fw-bold w-25">
+                                                <p class="mb-0 inputTitle">leading</p>
+                                                <p class="mb-0 weightVlue"><span class="leadingValue">1.2</span><span>em</span></p>
+                                            </div>
+                                        </div>
+                                        <input type="range" min="0.5" max="3" step="0.1" value="1.2" class="leadingInput">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-end rightCardHeader">
+                                <p class="mb-0 fw-bold btn">+Add Style</p>
+                            </div>
+                        </div>
+                        <textarea class="my-3 typedText textAreas Cities bg-transparent border-0 black" data-id="Cities">La Paz</textarea>
+                        <textarea class="my-3 typedText textAreas Excerpts bg-transparent border-0 black" data-id="Excerpts">Everybody is identical in their secret unspoken belief that way deep down they are different from everyone else.
+                    </textarea>
+                        <textarea class="my-3 typedText textAreas Names bg-transparent border-0 black" data-id="Names">Black</textarea>
+                    </div>
+                    <div class="p-4 card fw-bold">
+                        <div class="d-flex align-items-center justify-content-between w-100" style="font-size: 12px;">
+                            <div class="w-75 d-flex align-items-center gap-5">
+                                <div class="d-flex align-items-center gap-2">
+                                    <p class="mb-0">Black Italic</p>
+                                </div>
+                                <div class="align-items-center gap-5 w-75 hoverShow">
+
+                                    <div class="d-flex align-items-center w-25 gap-4 rangeInputCard">
+                                        <div class="position-relative">
+                                            <div class="d-flex align-items-center gap-3 dropdownTitle fontSizeTitle fw-bold">
+                                                <p class="mb-0 inputTitle">Size</p>
+                                                <p class="mb-0 weightVlue"><span class="inputValue">39</span><span>px</span></p>
+                                            </div>
+                                        </div>
+                                        <input type="range" min="8" max="280" class="sizeInput" value="39">
+                                    </div>
+                                    <div class="align-items-center w-25 gap-4 rangeInputCard">
+                                        <div class="position-relative">
+                                            <div class="d-flex align-items-center gap-3 dropdownTitle fontSizeTitle fw-bold w-25">
+                                                <p class="mb-0 inputTitle">leading</p>
+                                                <p class="mb-0 weightVlue"><span class="leadingValue">1.2</span><span>em</span></p>
+                                            </div>
+                                        </div>
+                                        <input type="range" min="0.5" max="3" step="0.1" value="1.2" class="leadingInput">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-end rightCardHeader">
+                                <p class="mb-0 fw-bold btn">+Add Style</p>
+                            </div>
+                        </div>
+                        <textarea class="my-3 typedText textAreas Cities bg-transparent border-0 black fst-italic" data-id="Cities">La Paz</textarea>
+                        <textarea class="my-3 typedText textAreas Excerpts bg-transparent border-0 black fst-italic" data-id="Excerpts">Everybody is identical in their secret unspoken belief that way deep down they are different from everyone else.
+                    </textarea>
+                        <textarea class="my-3 typedText textAreas Names bg-transparent border-0 black fst-italic" data-id="Names">Black Italic</textarea>
+                    </div>
+                </div>
+            </div>
+            <h3 class="my-5 py-5">2 Variables</h3>
+            <form class="d-xl-flex d-none align-items-center justify-content-between w-100" style="position: sticky;
+            top: 76px;
+            background: white;
+            z-index: 9;">
+                <div class="yourTextParent d-block d-xl-flex align-items-center">
+                    <div class="position-relative w-25">
+                        <svg class="position-absolute" width="13" height="13" viewBox="0 0 13 13" heigh="13" style="left: 6px;top: 22px;--icon-width:1.3rem; --icon-height:1.3rem;"><path pid="0" d="M12.63 2.34L10.66.37a1.25 1.25 0 00-1.78 0L.63 8.62a.5.5 0 00-.15.3l-.47 3.5a.5.5 0 00.56.58l3.52-.48a.5.5 0 00.29-.15l8.25-8.25a1.25 1.25 0 000-1.78zm-8.85 9.2l-2.68.36.36-2.68 5.85-5.85 2.32 2.32-5.85 5.85zm8.14-8.13l-1.57 1.56-2.32-2.32L9.59 1.1a.25.25 0 01.35 0l1.98 1.97a.25.25 0 010 .35z" fill="currentColor"></path></svg>
+                        <input class="border-0 ps-4 py-3 fw-bold" oninput="yourText(this)" placeholder="Your Text" style="outline: none">
+                    </div>
+                    <div class="d-flex align-items-center btns gap-4 cityName">
+                        <p class="mb-0 fw-bold" data-id="Cities">Cities</p>
+                        <p class="mb-0 fw-bold" data-id="Excerpts">Excerpts</p>
+                        <p class="mb-0 fw-bold active" data-id="Names">Names</p>
+                    </div>
+                    <div class="d-flex align-items-center gap-4 changeAllSize">
+                        <div class="position-relative">
+                            <div class="d-flex align-items-center gap-3 dropdownTitle listTitle fontSizeTitle fw-bold">
+                                <p class="mb-0"><span class="SingleInputValue">39</span>px</p>
+                                <svg width="7" height="5" viewBox="0 0 7 5" class="k7I8K9fJ arrow" style="--icon-width:0.7rem; --icon-height:0.5rem;"><path pid="0" d="M3.5 5L0 0h7L3.5 5z" fill="currentColor"></path></svg>
+                            </div>
+                            <div class="position-absolute card pt-5 pb-3 px-2 dropdownList lists2 lists fw-bold" style="height: 400px;overflow-y: auto;width: 114px;">
+                                <div class="position-relative w-100">
+                                    <div class="mb-0 position-absolute d-flex align-items-center gap-3 activeDropdownTitle" style="top: -34px;left: 12px;">
+                                        <p class="mb-0"><span class="SingleInputValue">144</span>px</p>
+                                        <svg width="7" height="5" viewBox="0 0 7 5" class="k7I8K9fJ arrow" style="--icon-width:0.7rem; --icon-height:0.5rem;transform: rotate(0deg);"><path pid="0" d="M3.5 5L0 0h7L3.5 5z" fill="currentColor"></path></svg>
+                                    </div>
+                                    <ul class="p-0 m-0">
+                                        <li class="d-flex align-items-center gap-3 position-relative" data-size="">
+                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                            <div class="radioShape rounded-circle border-2 border active"></div>
+                                            <p class="mb-0"><span class="SingleInputValue">39</span>px</p>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3 position-relative fontSize" data-size="8">
+                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                            <p class="mb-0">8px</p>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3 position-relative fontSize" data-size="12">
+                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                            <p class="mb-0">12px</p>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3 position-relative fontSize" data-size="14">
+                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                            <p class="mb-0">14px</p>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3 position-relative fontSize" data-size="20">
+                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                            <p class="mb-0">20px</p>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3 position-relative fontSize" data-size="24">
+                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                            <p class="mb-0">24px</p>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3 position-relative fontSize" data-size="32">
+                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                            <p class="mb-0">32px</p>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3 position-relative fontSize" data-size="40">
+                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                            <p class="mb-0">40px</p>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3 position-relative fontSize" data-size="50">
+                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                            <p class="mb-0">50px</p>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3 position-relative fontSize" data-size="64">
+                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                            <p class="mb-0">64px</p>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3 position-relative fontSize" data-size="96">
+                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                            <p class="mb-0">96px</p>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3 position-relative fontSize" data-size="120">
+                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                            <p class="mb-0">120px</p>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3 position-relative fontSize" data-size="184">
+                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                            <p class="mb-0">184px</p>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3 position-relative fontSize" data-size="280">
+                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                            <p class="mb-0">280px</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <input class="d-xl-block d-none" type="range" min="8" max="280" value="39" oninput="changeAllSize(this)">
+                    </div>
+                </div>
+                <div class="darkJustify d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-4 justify">
+                        <svg width="24" data-justify="left" height="9" viewBox="0 0 24 9" class="r-3q8I46 yGdWljes active" style="--icon-width:2.4rem; --icon-height:0.9rem;"><path pid="0" fill="currentColor" d="M0 0h24v1H0zM0 4h16v1H0zM0 8h24v1H0z"></path></svg>
+                        <svg width="24" data-justify="center" height="9" viewBox="0 0 24 9" class="r-3q8I46" style="--icon-width:2.4rem; --icon-height:0.9rem;"><path pid="0" fill="currentColor" d="M0 0h24v1H0zM4 4h16v1H4zM0 8h24v1H0z"></path></svg>
+                        <svg width="24" data-justify="right" height="9" viewBox="0 0 24 9" class="r-3q8I46" style="--icon-width:2.4rem; --icon-height:0.9rem;"><path pid="0" fill="currentColor" d="M0 0h24v1H0zM8 4h16v1H8zM0 8h24v1H0z"></path></svg>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <div class="position-relative">
+                            <div class="themes">
+                                <div class="selectedTheme mx-auto border-2 border border-dark rounded-circle"></div>
+                            </div>
+                            <div class="position-absolute w-100 flex-column gap-1 card px-1 py-2 themeItems bg-transparent">
+                                <div class="selectedTheme border-2 border border-dark rounded-circle" data-value="#FFCFCF" style="background-color: #FFCFCF;"></div>
+                                <div class="selectedTheme border-2 border border-dark rounded-circle" data-value="#FFF1B5" style="background-color: #FFF1B5;"></div>
+                                <div class="selectedTheme border-2 border border-dark rounded-circle" data-value="#C4FDC7" style="background-color: #C4FDC7;"></div>
+                                <div class="selectedTheme border-2 border border-dark rounded-circle" data-value="#BAFBFF" style="background-color: #E2FCFC;"></div>
+                                <div class="selectedTheme border-2 border border-dark rounded-circle" data-value="white" style="background-color: white;"></div>
+                            </div>
+                        </div>
+
+                        <div class="darkMode d-flex align-items-center border-2 border border-dark rounded-circle overflow-hidden" onclick="darkmode()">
+                            <div class="bg-white w-50 h-100"></div>
+                            <div class="bg-dark w-50 h-100"></div>
+                        </div>
+                    </div>
+                    <p class="mb-0 fw-bold reset d-none d-xl-block">Reset All</p>
+                </div>
+            </form>
+            <!--  -->
+            <div class="tabContent tabContentOne">
+                <div class="cards mt-4 fontsCard" id="cards">
+                    <div class="p-4 card fw-bold">
+                        <div class="d-flex align-items-center justify-content-between w-100" style="font-size: 12px;">
+                            <div class="w-75 d-flex align-items-center gap-5">
+                                <div class="d-flex align-items-center gap-2">
+                                    <p class="mb-0">Variable</p>
+                                </div>
+                                <div class="align-items-center gap-5 w-75 hoverShow">
+                                    <div class="align-items-center w-25 gap-4 rangeInputCard">
+                                        <div class="position-relative">
+                                            <div class="d-flex align-items-center gap-3 dropdownTitle fontSizeTitle fw-bold w-25">
+                                                <p class="mb-0 inputTitle">weight</p>
+                                                <p class="mb-0 weightVlue"><span class="inputValue">400</span></p>
+                                            </div>
+                                        </div>
+                                        <input type="range" min="200" max="700" step="100" class="weightInput">
+                                    </div>
+                                    <div class="d-flex align-items-center w-25 gap-4 rangeInputCard">
+                                        <div class="position-relative">
+                                            <div class="d-flex align-items-center gap-3 dropdownTitle fontSizeTitle fw-bold">
+                                                <p class="mb-0 inputTitle">Size</p>
+                                                <p class="mb-0 weightVlue"><span class="inputValue">39</span><span>px</span></p>
+                                            </div>
+                                        </div>
+                                        <input type="range" min="8" max="280" class="sizeInput" value="39">
+                                    </div>
+                                    <div class="align-items-center w-25 gap-4 rangeInputCard">
+                                        <div class="position-relative">
+                                            <div class="d-flex align-items-center gap-3 dropdownTitle fontSizeTitle fw-bold w-25">
+                                                <p class="mb-0 inputTitle">leading</p>
+                                                <p class="mb-0 weightVlue"><span class="leadingValue">1.2</span><span>em</span></p>
+                                            </div>
+                                        </div>
+                                        <input type="range" min="0.5" max="3" step="0.1" value="1.2" class="leadingInput">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-end rightCardHeader">
+                                <p class="mb-0 fw-bold btn">+Add Style</p>
+                            </div>
+                        </div>
+                        <textarea class="my-3 typedText textAreas Cities bg-transparent border-0 black" data-id="Cities">La Paz</textarea>
+                        <textarea class="my-3 typedText textAreas Excerpts bg-transparent border-0 black" data-id="Excerpts">Everybody is identical in their secret unspoken belief that way deep down they are different from everyone else.
+                    </textarea>
+                        <textarea class="my-3 typedText textAreas Names bg-transparent border-0 black" data-id="Names">Variable</textarea>
+                    </div>
+                    <div class="p-4 card fw-bold">
+                        <div class="d-flex align-items-center justify-content-between w-100" style="font-size: 12px;">
+                            <div class="w-75 d-flex align-items-center gap-5">
+                                <div class="d-flex align-items-center gap-2">
+                                    <p class="mb-0">Variable Italic</p>
+                                </div>
+                                <div class="align-items-center gap-5 w-75 hoverShow">
+                                    <div class="align-items-center w-25 gap-4 rangeInputCard">
+                                        <div class="position-relative">
+                                            <div class="d-flex align-items-center gap-3 dropdownTitle fontSizeTitle fw-bold w-25">
+                                                <p class="mb-0 inputTitle">weight</p>
+                                                <p class="mb-0 weightVlue"><span class="inputValue">400</span></p>
+                                            </div>
+                                        </div>
+                                        <input type="range" min="200" max="700" step="100" class="weightInput">
+                                    </div>
+                                    <div class="d-flex align-items-center w-25 gap-4 rangeInputCard">
+                                        <div class="position-relative">
+                                            <div class="d-flex align-items-center gap-3 dropdownTitle fontSizeTitle fw-bold">
+                                                <p class="mb-0 inputTitle">Size</p>
+                                                <p class="mb-0 weightVlue"><span class="inputValue">39</span><span>px</span></p>
+                                            </div>
+                                        </div>
+                                        <input type="range" min="8" max="280" class="sizeInput" value="39">
+                                    </div>
+                                    <div class="align-items-center w-25 gap-4 rangeInputCard">
+                                        <div class="position-relative">
+                                            <div class="d-flex align-items-center gap-3 dropdownTitle fontSizeTitle fw-bold w-25">
+                                                <p class="mb-0 inputTitle">leading</p>
+                                                <p class="mb-0 weightVlue"><span class="leadingValue">1.2</span><span>em</span></p>
+                                            </div>
+                                        </div>
+                                        <input type="range" min="0.5" max="3" step="0.1" value="1.2" class="leadingInput">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-end rightCardHeader">
+                                <p class="mb-0 fw-bold btn">+Add Style</p>
+                            </div>
+                        </div>
+                        <textarea class="my-3 typedText textAreas Cities bg-transparent border-0 black fst-italic" data-id="Cities">La Paz</textarea>
+                        <textarea class="my-3 typedText textAreas Excerpts bg-transparent border-0 black fst-italic" data-id="Excerpts">Everybody is identical in their secret unspoken belief that way deep down they are different from everyone else.
+                    </textarea>
+                        <textarea class="my-3 typedText textAreas Names bg-transparent border-0 black fst-italic" data-id="Names">Variable Italic</textarea>
+                    </div>
+                </div>
+            </div>
+            <h3 class="my-5 py-5" id="Glyphs">504 Glyphs</h3>
+            <div class="d-flex align-items-center position-sticky justify-content-lg-between justify-content-start gap-5 bg-white" style="top:76px;z-index: 99;">
+                <div class="d-lg-flex d-none align-items-center gap-4">
+                    <p class="mb-0 fw-bold">Small Letter <span id="selectedWord">A</span> With Caron</p>
+                    <p class="mb-0">U+0165</p>
+                </div>
+                <div class="d-flex align-items-center fw-bold gap-4 btn">
+                    <a class="setOutlineSolid text-decoration-none active" data-stroke="black">Solid</a>
+                    <a class="setOutlineSolid text-decoration-none" data-stroke="transparent">Outlines</a>
+                </div>
+                <div class="position-relative">
+                    <div class="d-flex align-items-center gap-3 dropdownTitle listTitle fontSizeTitle fw-bold">
+                        <p class="mb-0 fontHeading">Variable</p>
+                        <svg width="7" height="5" viewBox="0 0 7 5" class="k7I8K9fJ arrow" style="--icon-width:0.7rem; --icon-height:0.5rem;"><path pid="0" d="M3.5 5L0 0h7L3.5 5z" fill="currentColor"></path></svg>
+                    </div>
+                    <div class="position-absolute card pt-5 pb-3 px-2 fontStyleDropdown lists2 lists fw-bold bg-white" style="height: 382px;overflow-y: auto;width: 156px;top: -14px;">
+                        <div class="position-relative w-100">
+                            <div class="mb-0 position-absolute d-flex align-items-center gap-3 activeDropdownTitle" style="top: -34px;left: 12px;">
+                                <p class="mb-0 fontHeading">Variable</p>
+                                <svg width="7" height="5" viewBox="0 0 7 5" class="k7I8K9fJ arrow" style="--icon-width:0.7rem; --icon-height:0.5rem;transform: rotate(0deg);"><path pid="0" d="M3.5 5L0 0h7L3.5 5z" fill="currentColor"></path></svg>
+                            </div>
+                            <ul class="p-0 m-0">
+                                <li class="d-flex align-items-center gap-3 position-relative fontStyle2" data-style="normal" data-weight="300">
+                                    <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                    <div class="radioShape rounded-circle border-2 border"></div>
+                                    <p class="mb-0">Light</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 position-relative fontStyle2" data-style="italic" data-weight="300">
+                                    <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                    <div class="radioShape rounded-circle border-2 border"></div>
+                                    <p class="mb-0">Light Italic</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 position-relative fontStyle2" data-style="normal" data-weight="400">
+                                    <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                    <div class="radioShape rounded-circle border-2 border"></div>
+                                    <p class="mb-0">Regular</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 position-relative fontStyle2" data-style="italic" data-weight="400">
+                                    <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                    <div class="radioShape rounded-circle border-2 border"></div>
+                                    <p class="mb-0">Italic</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 position-relative fontStyle2" data-style="normal" data-weight="500">
+                                    <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                    <div class="radioShape rounded-circle border-2 border"></div>
+                                    <p class="mb-0">Medium</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 position-relative fontStyle2" data-style="Italic" data-weight="500">
+                                    <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                    <div class="radioShape rounded-circle border-2 border"></div>
+                                    <p class="mb-0">Medium Italic</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 position-relative fontStyle2" data-style="normal" data-weight="700">
+                                    <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                    <div class="radioShape rounded-circle border-2 border"></div>
+                                    <p class="mb-0">Bold</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 position-relative fontStyle2" data-style="Italic" data-weight="700">
+                                    <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                    <div class="radioShape rounded-circle border-2 border"></div>
+                                    <p class="mb-0">Bold Italic</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 position-relative fontStyle2" data-style="normal" data-weight="900">
+                                    <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                    <div class="radioShape rounded-circle border-2 border"></div>
+                                    <p class="mb-0">Black</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 position-relative fontStyle2" data-style="Italic" data-weight="900">
+                                    <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                    <div class="radioShape rounded-circle border-2 border"></div>
+                                    <p class="mb-0">Black Italic</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 position-relative fontStyle2" data-style="normal" data-weight="900">
+                                    <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                    <div class="radioShape rounded-circle border-2 border"></div>
+                                    <p class="mb-0">Variable</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 position-relative fontStyle2" data-style="Italic" data-weight="900">
+                                    <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                    <div class="radioShape rounded-circle border-2 border"></div>
+                                    <p class="mb-0">Variable Italic</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-lg-flex d-none align-items-center fw-bold gap-4 btn">
+                    <a class="basicFullSet text-decoration-none active" data-set="basic">Basic Set</a>
+                    <a class="basicFullSet text-decoration-none" data-set="full">Full Set</a>
+                </div>
+                <div class="yourTextParent yourTextParent2 w-auto d-lg-flex d-none align-items-center">
+                    <div class="position-relative">
+                        <svg class="position-absolute" width="13" height="13" viewBox="0 0 13 13" heigh="13" style="left: 6px;top: 22px;--icon-width:1.3rem; --icon-height:1.3rem;"><path pid="0" d="M12.63 2.34L10.66.37a1.25 1.25 0 00-1.78 0L.63 8.62a.5.5 0 00-.15.3l-.47 3.5a.5.5 0 00.56.58l3.52-.48a.5.5 0 00.29-.15l8.25-8.25a1.25 1.25 0 000-1.78zm-8.85 9.2l-2.68.36.36-2.68 5.85-5.85 2.32 2.32-5.85 5.85zm8.14-8.13l-1.57 1.56-2.32-2.32L9.59 1.1a.25.25 0 01.35 0l1.98 1.97a.25.25 0 010 .35z" fill="currentColor"></path></svg>
+                        <input class="border-0 ps-4 py-3 fw-bold" oninput="yourText(this)" placeholder="Type your letters" style="outline: none">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6" style="z-index: -2;">
+                    <div class="position-relative d-flex justify-content-center align-items-center">
+                        <div class="position-absolute text-secondary end-0 start-0" style="top: 137px;">
+                            <div class="d-flex justify-content-between mb-1 align-items-center">
+                                <span>Cap Height</span>
+                                <span>716</span>
+                            </div>
+                            <div class="line w-100 text-secondary"></div>
+                        </div>
+                        <div class="position-absolute end-0 start-0" style="top: 228px;">
+                            <div class="d-flex text-secondary justify-content-between mb-1 align-items-center">
+                                <span>X Height</span>
+                                <span>484</span>
+                            </div>
+                            <div class="line w-100"></div>
+                        </div>
+                        <p class="word">A</p>
+                        <div class="position-absolute end-0 start-0" style="top: 391px;">
+                            <div class="d-flex text-secondary justify-content-between mb-1 align-items-center">
+                                <span>Baseline</span>
+                                <span>0</span>
+                            </div>
+                            <div class="line w-100"></div>
+                        </div>
+                        <div class="position-absolute end-0 start-0" style="top: 490px;">
+                            <div class="d-flex text-secondary justify-content-between mb-1 align-items-center">
+                                <span>Descender</span>
+                                <span>-211</span>
+                            </div>
+                            <div class="line w-100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div id="wordsParent">
+                        <div>
+                            <p class="text-end text-secondary fw-bold mt-5">Uppercase</p>
+                            <div class="d-flex align-items-center flex-wrap">
+                                <div class="wordBlock active">A</div>
+                                <div class="wordBlock">B</div>
+                                <div class="wordBlock">C</div>
+                                <div class="wordBlock">D</div>
+                                <div class="wordBlock">E</div>
+                                <div class="wordBlock">F</div>
+                                <div class="wordBlock">G</div>
+                                <div class="wordBlock">H</div>
+                                <div class="wordBlock">I</div>
+                                <div class="wordBlock">J</div>
+                                <div class="wordBlock">K</div>
+                                <div class="wordBlock">L</div>
+                                <div class="wordBlock">M</div>
+                                <div class="wordBlock">N</div>
+                                <div class="wordBlock">O</div>
+                                <div class="wordBlock">P</div>
+                                <div class="wordBlock">Q</div>
+                                <div class="wordBlock">R</div>
+                                <div class="wordBlock">S</div>
+                                <div class="wordBlock">T</div>
+                                <div class="wordBlock">U</div>
+                                <div class="wordBlock">V</div>
+                                <div class="wordBlock">W</div>
+                                <div class="wordBlock">X</div>
+                                <div class="wordBlock">Y</div>
+                                <div class="wordBlock">Z</div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-end text-secondary fw-bold mt-1">Lowercase</p>
+                            <div class="d-flex align-items-center flex-wrap">
+                                <div class="wordBlock">a</div>
+                                <div class="wordBlock">b</div>
+                                <div class="wordBlock">c</div>
+                                <div class="wordBlock">d</div>
+                                <div class="wordBlock">e</div>
+                                <div class="wordBlock">f</div>
+                                <div class="wordBlock">g</div>
+                                <div class="wordBlock">h</div>
+                                <div class="wordBlock">i</div>
+                                <div class="wordBlock">j</div>
+                                <div class="wordBlock">k</div>
+                                <div class="wordBlock">l</div>
+                                <div class="wordBlock">m</div>
+                                <div class="wordBlock">n</div>
+                                <div class="wordBlock">o</div>
+                                <div class="wordBlock">p</div>
+                                <div class="wordBlock">q</div>
+                                <div class="wordBlock">r</div>
+                                <div class="wordBlock">s</div>
+                                <div class="wordBlock">t</div>
+                                <div class="wordBlock">u</div>
+                                <div class="wordBlock">v</div>
+                                <div class="wordBlock">w</div>
+                                <div class="wordBlock">x</div>
+                                <div class="wordBlock">y</div>
+                                <div class="wordBlock">z</div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-end text-secondary fw-bold mt-1">Numerals</p>
+                            <div class="d-flex align-items-center flex-wrap">
+                                <div class="wordBlock">0</div>
+                                <div class="wordBlock">1</div>
+                                <div class="wordBlock">2</div>
+                                <div class="wordBlock">3</div>
+                                <div class="wordBlock">4</div>
+                                <div class="wordBlock">5</div>
+                                <div class="wordBlock">6</div>
+                                <div class="wordBlock">7</div>
+                                <div class="wordBlock">8</div>
+                                <div class="wordBlock">9</div>
+                            </div>
+                        </div>
+                        <p class="fw-bold mt-3 btn text-start showBtn" id="showFullSett" onclick="showFullSet(this)">Show Full Set</p>
+                        <div id="FullSetParent">
+                            <div>
+                                <p class="text-end text-secondary fw-bold mt-5">Uppercase Accented</p>
+                                <div class="d-flex align-items-center flex-wrap">
+                                    <div class="wordBlock">Æ</div>
+                                    <div class="wordBlock">Á</div>
+                                    <div class="wordBlock">Â</div>
+                                    <div class="wordBlock">Ä</div>
+                                    <div class="wordBlock">À</div>
+                                    <div class="wordBlock">Å</div>
+                                    <div class="wordBlock">Ã</div>
+                                    <div class="wordBlock">Ă</div>
+                                    <div class="wordBlock">Ā</div>
+                                    <div class="wordBlock">Ą</div>
+                                    <div class="wordBlock">Ç</div>
+                                    <div class="wordBlock">Ć</div>
+                                    <div class="wordBlock">Č</div>
+                                    <div class="wordBlock">Ď</div>
+                                    <div class="wordBlock">Đ</div>
+                                    <div class="wordBlock">Ė</div>
+                                    <div class="wordBlock">Ę</div>
+                                    <div class="wordBlock">Ě</div>
+                                    <div class="wordBlock">Ĕ</div>
+                                    <div class="wordBlock">Ə</div>
+                                    <div class="wordBlock">È</div>
+                                    <div class="wordBlock">É</div>
+                                    <div class="wordBlock">Ê</div>
+                                    <div class="wordBlock">Ë</div>
+                                    <div class="wordBlock">Ē</div>
+                                    <div class="wordBlock">Ģ</div>
+                                    <div class="wordBlock">Ğ</div>
+                                    <div class="wordBlock">İ</div>
+                                    <div class="wordBlock">Į</div>
+                                    <div class="wordBlock">Ī</div>
+                                    <div class="wordBlock">Ï</div>
+                                    <div class="wordBlock">Î</div>
+                                    <div class="wordBlock">Í</div>
+                                    <div class="wordBlock">Ì</div>
+                                    <div class="wordBlock">Ķ</div>
+                                    <div class="wordBlock">Ł</div>
+                                    <div class="wordBlock">Ľ</div>
+                                    <div class="wordBlock">Ļ</div>
+                                    <div class="wordBlock">Ĺ</div>
+                                    <div class="wordBlock">Ň</div>
+                                    <div class="wordBlock">Ņ</div>
+                                    <div class="wordBlock">Ń</div>
+                                    <div class="wordBlock">Ñ</div>
+                                    <div class="wordBlock">Œ</div>
+                                    <div class="wordBlock">Ő</div>
+                                    <div class="wordBlock">Ō</div>
+                                    <div class="wordBlock">Ø</div>
+                                    <div class="wordBlock">Ö</div>
+                                    <div class="wordBlock">Õ</div>
+                                    <div class="wordBlock">Ô</div>
+                                    <div class="wordBlock">Ó</div>
+                                    <div class="wordBlock">Ò</div>
+                                    <div class="wordBlock">Ŕ</div>
+                                    <div class="wordBlock">Ř</div>
+                                    <div class="wordBlock">ß</div>
+                                    <div class="wordBlock">§</div>
+                                    <div class="wordBlock">Ś</div>
+                                    <div class="wordBlock">Š</div>
+                                    <div class="wordBlock">Ş</div>
+                                    <div class="wordBlock">Þ</div>
+                                    <div class="wordBlock">Ť</div>
+                                    <div class="wordBlock">Ț</div>
+                                    <div class="wordBlock">Ţ</div>
+                                    <div class="wordBlock">Ų</div>
+                                    <div class="wordBlock">Ű</div>
+                                    <div class="wordBlock">Ů</div>
+                                    <div class="wordBlock">Ū</div>
+                                    <div class="wordBlock">Ü</div>
+                                    <div class="wordBlock">Û</div>
+                                    <div class="wordBlock">Ú</div>
+                                    <div class="wordBlock">Ù</div>
+                                    <div class="wordBlock">Ý</div>
+                                    <div class="wordBlock">Ź</div>
+                                    <div class="wordBlock">Ż</div>
+                                    <div class="wordBlock">Ž</div>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-end text-secondary fw-bold mt-1">Fractions</p>
+                                <div class="d-flex align-items-center flex-wrap">
+                                    <div class="wordBlock">¼</div>
+                                    <div class="wordBlock">½</div>
+                                    <div class="wordBlock">¾</div>
+                                    <div class="wordBlock">⅛</div>
+                                    <div class="wordBlock">⅜</div>
+                                    <div class="wordBlock">⅝</div>
+                                    <div class="wordBlock">⅞</div>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-end text-secondary fw-bold mt-1">Punctuation</p>
+                                <div class="d-flex align-items-center flex-wrap">
+                                    <div class="wordBlock">*</div>
+                                    <div class="wordBlock">.</div>
+                                    <div class="wordBlock">-</div>
+                                    <div class="wordBlock">•</div>
+                                    <div class="wordBlock">_</div>
+                                    <div class="wordBlock">,</div>
+                                    <div class="wordBlock">;</div>
+                                    <div class="wordBlock">'</div>
+                                    <div class="wordBlock">"</div>
+                                    <div class="wordBlock">،</div>
+                                    <div class="wordBlock">`</div>
+                                    <div class="wordBlock">~</div>
+                                    <div class="wordBlock">\</div>
+                                    <div class="wordBlock">|</div>
+                                    <div class="wordBlock">
+                                        < </div>
+                                            <div class="wordBlock">></div>
+                                            <div class="wordBlock">{</div>
+                                            <div class="wordBlock">}</div>
+                                            <div class="wordBlock">[</div>
+                                            <div class="wordBlock">]</div>
+                                            <div class="wordBlock">°</div>
+                                            <div class="wordBlock">•</div>
+                                            <div class="wordBlock">《</div>
+                                            <div class="wordBlock">》</div>
+                                            <div class="wordBlock">¡</div>
+                                            <div class="wordBlock">¿</div>
+                                    </div>
+                                    <p class="fw-bold mt-3 btn text-start showBtn" id="hideFullSett" onclick="hideFullSet(this)">Show Basic Set</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <h3 class="my-5 py-5 d-none d-md-block" id="Layouts">Layouts</h3>
+                    <form class="d-none d-md-flex align-items-center justify-content-between w-100 position-sticky bg-white" style="top: 83px;z-index: 999;height: 49px;">
+                        <p class="mb-0 fw-bold">+ New Layout</p>
+                        <p class="mb-0 fw-bold">Default Layout</p>
+                        <p class="mb-0 fw-bold">Reset</p>
+                    </form>
+                    <!--  -->
+                    <div class="tabContent tabContentOne d-none d-md-block">
+                        <div class="cards mt-4 fontsCard" id="cards">
+                            <div class="p-4 card fw-bold">
+                                <div class="d-flex align-items-center justify-content-between w-100" style="font-size: 12px;">
+                                    <div class="w-75 d-flex align-items-center gap-5">
+                                        <div class="position-relative">
+                                            <div class="d-flex align-items-center gap-3 dropdownTitle listTitle fontSizeTitle fw-bold">
+                                                <p class="mb-0 fontHeading">Variable</p>
+                                                <svg width="7" height="5" viewBox="0 0 7 5" class="k7I8K9fJ arrow" style="--icon-width:0.7rem; --icon-height:0.5rem;"><path pid="0" d="M3.5 5L0 0h7L3.5 5z" fill="currentColor"></path></svg>
+                                            </div>
+                                            <div class="position-absolute card pt-5 pb-3 px-2 fontStyleDropdown lists2 lists fw-bold bg-white" style="height: 382px;overflow-y: auto;width: 156px;">
+                                                <div class="position-relative w-100">
+                                                    <div class="mb-0 position-absolute d-flex align-items-center gap-3 activeDropdownTitle" style="top: -34px;left: 12px;">
+                                                        <p class="mb-0 fontHeading">Variable</p>
+                                                        <svg width="7" height="5" viewBox="0 0 7 5" class="k7I8K9fJ arrow" style="--icon-width:0.7rem; --icon-height:0.5rem;transform: rotate(0deg);"><path pid="0" d="M3.5 5L0 0h7L3.5 5z" fill="currentColor"></path></svg>
+                                                    </div>
+                                                    <ul class="p-0 m-0">
+                                                        <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout Layout" data-style="normal" data-weight="300">
+                                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                                            <p class="mb-0">Light</p>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout Layout" data-style="italic" data-weight="300">
+                                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                                            <p class="mb-0">Light Italic</p>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout Layout" data-style="normal" data-weight="400">
+                                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                                            <p class="mb-0">Regular</p>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout Layout" data-style="italic" data-weight="400">
+                                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                                            <p class="mb-0">Italic</p>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout Layout" data-style="normal" data-weight="500">
+                                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                                            <p class="mb-0">Medium</p>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout Layout" data-style="Italic" data-weight="500">
+                                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                                            <p class="mb-0">Medium Italic</p>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout Layout" data-style="normal" data-weight="700">
+                                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                                            <p class="mb-0">Bold</p>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout Layout" data-style="Italic" data-weight="700">
+                                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                                            <p class="mb-0">Bold Italic</p>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout Layout" data-style="normal" data-weight="900">
+                                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                                            <p class="mb-0">Black</p>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout Layout" data-style="Italic" data-weight="900">
+                                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                                            <p class="mb-0">Black Italic</p>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout Layout" data-style="normal" data-weight="900">
+                                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                                            <p class="mb-0">Variable</p>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout Layout" data-style="Italic" data-weight="900">
+                                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                                            <p class="mb-0">Variable Italic</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="align-items-center gap-5 w-75 hoverShow">
+                                            <div class="position-relative">
+                                                <div class="d-flex align-items-center gap-3 dropdownTitle listTitle fontSizeTitle fw-bold">
+                                                    <p class="mb-0 fontHeading">Variable</p>
+                                                    <svg width="7" height="5" viewBox="0 0 7 5" class="k7I8K9fJ arrow" style="--icon-width:0.7rem; --icon-height:0.5rem;"><path pid="0" d="M3.5 5L0 0h7L3.5 5z" fill="currentColor"></path></svg>
+                                                </div>
+                                                <div class="position-absolute card pt-5 pb-3 px-2 fontStyleDropdown lists2 lists fw-bold bg-white" style="height: 382px;overflow-y: auto;width: 156px;">
+                                                    <div class="position-relative w-100">
+                                                        <div class="mb-0 position-absolute d-flex align-items-center gap-3 activeDropdownTitle" style="top: -34px;left: 12px;">
+                                                            <p class="mb-0 fontHeading">Variable</p>
+                                                            <svg width="7" height="5" viewBox="0 0 7 5" class="k7I8K9fJ arrow" style="--icon-width:0.7rem; --icon-height:0.5rem;transform: rotate(0deg);"><path pid="0" d="M3.5 5L0 0h7L3.5 5z" fill="currentColor"></path></svg>
+                                                        </div>
+                                                        <ul class="p-0 m-0">
+                                                            <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout" data-style="normal" data-weight="300">
+                                                                <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                                <div class="radioShape rounded-circle border-2 border"></div>
+                                                                <p class="mb-0">Light</p>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout" data-style="italic" data-weight="300">
+                                                                <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                                <div class="radioShape rounded-circle border-2 border"></div>
+                                                                <p class="mb-0">Light Italic</p>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout" data-style="normal" data-weight="400">
+                                                                <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                                <div class="radioShape rounded-circle border-2 border"></div>
+                                                                <p class="mb-0">Regular</p>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout" data-style="italic" data-weight="400">
+                                                                <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                                <div class="radioShape rounded-circle border-2 border"></div>
+                                                                <p class="mb-0">Italic</p>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout" data-style="normal" data-weight="500">
+                                                                <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                                <div class="radioShape rounded-circle border-2 border"></div>
+                                                                <p class="mb-0">Medium</p>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout" data-style="Italic" data-weight="500">
+                                                                <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                                <div class="radioShape rounded-circle border-2 border"></div>
+                                                                <p class="mb-0">Medium Italic</p>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout" data-style="normal" data-weight="700">
+                                                                <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                                <div class="radioShape rounded-circle border-2 border"></div>
+                                                                <p class="mb-0">Bold</p>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout" data-style="Italic" data-weight="700">
+                                                                <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                                <div class="radioShape rounded-circle border-2 border"></div>
+                                                                <p class="mb-0">Bold Italic</p>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout" data-style="normal" data-weight="900">
+                                                                <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                                <div class="radioShape rounded-circle border-2 border"></div>
+                                                                <p class="mb-0">Black</p>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout" data-style="Italic" data-weight="900">
+                                                                <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                                <div class="radioShape rounded-circle border-2 border"></div>
+                                                                <p class="mb-0">Black Italic</p>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout" data-style="normal" data-weight="900">
+                                                                <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                                <div class="radioShape rounded-circle border-2 border"></div>
+                                                                <p class="mb-0">Variable</p>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout" data-style="Italic" data-weight="900">
+                                                                <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                                <div class="radioShape rounded-circle border-2 border"></div>
+                                                                <p class="mb-0">Variable Italic</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center w-25 gap-4 rangeInputCard">
+                                                <div class="position-relative">
+                                                    <div class="d-flex align-items-center gap-3 dropdownTitle fontSizeTitle fw-bold">
+                                                        <p class="mb-0 inputTitle">Size</p>
+                                                        <p class="mb-0 weightVlue"><span class="inputValue">39</span><span>px</span></p>
+                                                    </div>
+                                                </div>
+                                                <input type="range" min="8" max="280" class="sizeInput" value="39">
+                                            </div>
+                                            <div class="align-items-center w-25 gap-4 rangeInputCard">
+                                                <div class="position-relative">
+                                                    <div class="d-flex align-items-center gap-3 dropdownTitle fontSizeTitle fw-bold w-25">
+                                                        <p class="mb-0 inputTitle">weight</p>
+                                                        <p class="mb-0 weightVlue"><span class="inputValue">400</span></p>
+                                                    </div>
+                                                </div>
+                                                <input type="range" min="200" max="700" step="100" class="weightInput">
+                                            </div>
+                                            <div class="align-items-center w-25 gap-4 rangeInputCard">
+                                                <div class="position-relative">
+                                                    <div class="d-flex align-items-center gap-3 dropdownTitle fontSizeTitle fw-bold w-25">
+                                                        <p class="mb-0 inputTitle">leading</p>
+                                                        <p class="mb-0 weightVlue"><span class="leadingValue">1.2</span><span>em</span></p>
+                                                    </div>
+                                                </div>
+                                                <input type="range" min="0.5" max="3" step="0.1" value="1.2" class="leadingInput">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-4 align-items-center justify-content-end rightCardHeader">
+                                        <p class="mb-0 fw-bold removeBlock">- Remove Block</p>
+                                        <p class="mb-0 fw-bold">+ Add Block</p>
+                                    </div>
+                                </div>
+                                <textarea style="font-size: 39px;" class="my-3 textAreas bg-transparent border-0">Seize the day</textarea>
+                                <p class="text-end mb-0 mt-auto">+ Add Style</p>
+                            </div>
+                            <div class="p-4 card fw-bold">
+                                <div class="d-flex align-items-center justify-content-between w-100" style="font-size: 12px;">
+                                    <div class="w-75 d-flex align-items-center gap-5">
+                                        <div class="position-relative">
+                                            <div class="d-flex align-items-center gap-3 dropdownTitle listTitle fontSizeTitle fw-bold">
+                                                <p class="mb-0 fontHeading">Variable</p>
+                                                <svg width="7" height="5" viewBox="0 0 7 5" class="k7I8K9fJ arrow" style="--icon-width:0.7rem; --icon-height:0.5rem;"><path pid="0" d="M3.5 5L0 0h7L3.5 5z" fill="currentColor"></path></svg>
+                                            </div>
+                                            <div class="position-absolute card pt-5 pb-3 px-2 fontStyleDropdown lists2 lists fw-bold bg-white" style="height: 382px;overflow-y: auto;width: 156px;">
+                                                <div class="position-relative w-100">
+                                                    <div class="mb-0 position-absolute d-flex align-items-center gap-3 activeDropdownTitle" style="top: -34px;left: 12px;">
+                                                        <p class="mb-0 fontHeading">Variable</p>
+                                                        <svg width="7" height="5" viewBox="0 0 7 5" class="k7I8K9fJ arrow" style="--icon-width:0.7rem; --icon-height:0.5rem;transform: rotate(0deg);"><path pid="0" d="M3.5 5L0 0h7L3.5 5z" fill="currentColor"></path></svg>
+                                                    </div>
+                                                    <ul class="p-0 m-0">
+                                                        <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout Layout" data-style="normal" data-weight="300">
+                                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                                            <p class="mb-0">Light</p>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout Layout" data-style="italic" data-weight="300">
+                                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                                            <p class="mb-0">Light Italic</p>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout Layout" data-style="normal" data-weight="400">
+                                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                                            <p class="mb-0">Regular</p>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout Layout" data-style="italic" data-weight="400">
+                                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                                            <p class="mb-0">Italic</p>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout Layout" data-style="normal" data-weight="500">
+                                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                                            <p class="mb-0">Medium</p>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout Layout" data-style="Italic" data-weight="500">
+                                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                                            <p class="mb-0">Medium Italic</p>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout Layout" data-style="normal" data-weight="700">
+                                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                                            <p class="mb-0">Bold</p>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout Layout" data-style="Italic" data-weight="700">
+                                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                                            <p class="mb-0">Bold Italic</p>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout Layout" data-style="normal" data-weight="900">
+                                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                                            <p class="mb-0">Black</p>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout Layout" data-style="Italic" data-weight="900">
+                                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                                            <p class="mb-0">Black Italic</p>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout Layout" data-style="normal" data-weight="900">
+                                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                                            <p class="mb-0">Variable</p>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout Layout" data-style="Italic" data-weight="900">
+                                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                                            <p class="mb-0">Variable Italic</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="align-items-center gap-5 w-75 hoverShow">
+                                            <div class="position-relative">
+                                                <div class="d-flex align-items-center gap-3 dropdownTitle listTitle fontSizeTitle fw-bold">
+                                                    <p class="mb-0 fontHeading">Variable</p>
+                                                    <svg width="7" height="5" viewBox="0 0 7 5" class="k7I8K9fJ arrow" style="--icon-width:0.7rem; --icon-height:0.5rem;"><path pid="0" d="M3.5 5L0 0h7L3.5 5z" fill="currentColor"></path></svg>
+                                                </div>
+                                                <div class="position-absolute card pt-5 pb-3 px-2 fontStyleDropdown lists2 lists fw-bold bg-white" style="height: 382px;overflow-y: auto;width: 156px;">
+                                                    <div class="position-relative w-100">
+                                                        <div class="mb-0 position-absolute d-flex align-items-center gap-3 activeDropdownTitle" style="top: -34px;left: 12px;">
+                                                            <p class="mb-0 fontHeading">Variable</p>
+                                                            <svg width="7" height="5" viewBox="0 0 7 5" class="k7I8K9fJ arrow" style="--icon-width:0.7rem; --icon-height:0.5rem;transform: rotate(0deg);"><path pid="0" d="M3.5 5L0 0h7L3.5 5z" fill="currentColor"></path></svg>
+                                                        </div>
+                                                        <ul class="p-0 m-0">
+                                                            <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout" data-style="normal" data-weight="300">
+                                                                <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                                <div class="radioShape rounded-circle border-2 border"></div>
+                                                                <p class="mb-0">Light</p>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout" data-style="italic" data-weight="300">
+                                                                <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                                <div class="radioShape rounded-circle border-2 border"></div>
+                                                                <p class="mb-0">Light Italic</p>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout" data-style="normal" data-weight="400">
+                                                                <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                                <div class="radioShape rounded-circle border-2 border"></div>
+                                                                <p class="mb-0">Regular</p>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout" data-style="italic" data-weight="400">
+                                                                <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                                <div class="radioShape rounded-circle border-2 border"></div>
+                                                                <p class="mb-0">Italic</p>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout" data-style="normal" data-weight="500">
+                                                                <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                                <div class="radioShape rounded-circle border-2 border"></div>
+                                                                <p class="mb-0">Medium</p>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout" data-style="Italic" data-weight="500">
+                                                                <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                                <div class="radioShape rounded-circle border-2 border"></div>
+                                                                <p class="mb-0">Medium Italic</p>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout" data-style="normal" data-weight="700">
+                                                                <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                                <div class="radioShape rounded-circle border-2 border"></div>
+                                                                <p class="mb-0">Bold</p>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout" data-style="Italic" data-weight="700">
+                                                                <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                                <div class="radioShape rounded-circle border-2 border"></div>
+                                                                <p class="mb-0">Bold Italic</p>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout" data-style="normal" data-weight="900">
+                                                                <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                                <div class="radioShape rounded-circle border-2 border"></div>
+                                                                <p class="mb-0">Black</p>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout" data-style="Italic" data-weight="900">
+                                                                <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                                <div class="radioShape rounded-circle border-2 border"></div>
+                                                                <p class="mb-0">Black Italic</p>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout" data-style="normal" data-weight="900">
+                                                                <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                                <div class="radioShape rounded-circle border-2 border"></div>
+                                                                <p class="mb-0">Variable</p>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout" data-style="Italic" data-weight="900">
+                                                                <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                                <div class="radioShape rounded-circle border-2 border"></div>
+                                                                <p class="mb-0">Variable Italic</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center w-25 gap-4 rangeInputCard">
+                                                <div class="position-relative">
+                                                    <div class="d-flex align-items-center gap-3 dropdownTitle fontSizeTitle fw-bold">
+                                                        <p class="mb-0 inputTitle">Size</p>
+                                                        <p class="mb-0 weightVlue"><span class="inputValue">39</span><span>px</span></p>
+                                                    </div>
+                                                </div>
+                                                <input type="range" min="8" max="280" class="sizeInput" value="39">
+                                            </div>
+                                            <div class="align-items-center w-25 gap-4 rangeInputCard">
+                                                <div class="position-relative">
+                                                    <div class="d-flex align-items-center gap-3 dropdownTitle fontSizeTitle fw-bold w-25">
+                                                        <p class="mb-0 inputTitle">weight</p>
+                                                        <p class="mb-0 weightVlue"><span class="inputValue">400</span></p>
+                                                    </div>
+                                                </div>
+                                                <input type="range" min="200" max="700" step="100" class="weightInput">
+                                            </div>
+                                            <div class="align-items-center w-25 gap-4 rangeInputCard">
+                                                <div class="position-relative">
+                                                    <div class="d-flex align-items-center gap-3 dropdownTitle fontSizeTitle fw-bold w-25">
+                                                        <p class="mb-0 inputTitle">leading</p>
+                                                        <p class="mb-0 weightVlue"><span class="leadingValue">1.2</span><span>em</span></p>
+                                                    </div>
+                                                </div>
+                                                <input type="range" min="0.5" max="3" step="0.1" value="1.2" class="leadingInput">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-4 align-items-center justify-content-end rightCardHeader">
+                                        <p class="mb-0 fw-bold removeBlock">- Remove Block</p>
+                                        <p class="mb-0 fw-bold">+ Add Block</p>
+                                    </div>
+                                </div>
+                                <textarea style="font-size: 39px;" class="my-3 textAreas bg-transparent border-0" data-id="Cities">To be, or not to be; that is the question; Whether ‘tis nobler in the mind to suffer; The slings and arrows of outrageous fortune, Or to take arms against a sea of troubles
+                                </textarea>
+                                <p class="text-end mb-0 mt-auto">+ Add Style</p>
+                            </div>
+                            <div class="p-4 card fw-bold">
+                                <div class="d-flex align-items-center justify-content-between w-100" style="font-size: 12px;">
+                                    <div class="w-75 d-flex align-items-center gap-5">
+                                        <div class="position-relative">
+                                            <div class="d-flex align-items-center gap-3 dropdownTitle listTitle fontSizeTitle fw-bold">
+                                                <p class="mb-0 fontHeading">Variable</p>
+                                                <svg width="7" height="5" viewBox="0 0 7 5" class="k7I8K9fJ arrow" style="--icon-width:0.7rem; --icon-height:0.5rem;"><path pid="0" d="M3.5 5L0 0h7L3.5 5z" fill="currentColor"></path></svg>
+                                            </div>
+                                            <div class="position-absolute card pt-5 pb-3 px-2 fontStyleDropdown lists2 lists fw-bold bg-white" style="height: 382px;overflow-y: auto;width: 156px;">
+                                                <div class="position-relative w-100">
+                                                    <div class="mb-0 position-absolute d-flex align-items-center gap-3 activeDropdownTitle" style="top: -34px;left: 12px;">
+                                                        <p class="mb-0 fontHeading">Variable</p>
+                                                        <svg width="7" height="5" viewBox="0 0 7 5" class="k7I8K9fJ arrow" style="--icon-width:0.7rem; --icon-height:0.5rem;transform: rotate(0deg);"><path pid="0" d="M3.5 5L0 0h7L3.5 5z" fill="currentColor"></path></svg>
+                                                    </div>
+                                                    <ul class="p-0 m-0">
+                                                        <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout Layout" data-style="normal" data-weight="300">
+                                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                                            <p class="mb-0">Light</p>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout Layout" data-style="italic" data-weight="300">
+                                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                                            <p class="mb-0">Light Italic</p>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout Layout" data-style="normal" data-weight="400">
+                                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                                            <p class="mb-0">Regular</p>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout Layout" data-style="italic" data-weight="400">
+                                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                                            <p class="mb-0">Italic</p>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout Layout" data-style="normal" data-weight="500">
+                                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                                            <p class="mb-0">Medium</p>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout Layout" data-style="Italic" data-weight="500">
+                                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                                            <p class="mb-0">Medium Italic</p>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout Layout" data-style="normal" data-weight="700">
+                                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                                            <p class="mb-0">Bold</p>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout Layout" data-style="Italic" data-weight="700">
+                                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                                            <p class="mb-0">Bold Italic</p>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout Layout" data-style="normal" data-weight="900">
+                                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                                            <p class="mb-0">Black</p>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout Layout" data-style="Italic" data-weight="900">
+                                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                                            <p class="mb-0">Black Italic</p>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout Layout" data-style="normal" data-weight="900">
+                                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                                            <p class="mb-0">Variable</p>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout Layout" data-style="Italic" data-weight="900">
+                                                            <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                            <div class="radioShape rounded-circle border-2 border"></div>
+                                                            <p class="mb-0">Variable Italic</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="align-items-center gap-5 w-75 hoverShow">
+                                            <div class="position-relative">
+                                                <div class="d-flex align-items-center gap-3 dropdownTitle listTitle fontSizeTitle fw-bold">
+                                                    <p class="mb-0 fontHeading">Variable</p>
+                                                    <svg width="7" height="5" viewBox="0 0 7 5" class="k7I8K9fJ arrow" style="--icon-width:0.7rem; --icon-height:0.5rem;"><path pid="0" d="M3.5 5L0 0h7L3.5 5z" fill="currentColor"></path></svg>
+                                                </div>
+                                                <div class="position-absolute card pt-5 pb-3 px-2 fontStyleDropdown lists2 lists fw-bold bg-white" style="height: 382px;overflow-y: auto;width: 156px;">
+                                                    <div class="position-relative w-100">
+                                                        <div class="mb-0 position-absolute d-flex align-items-center gap-3 activeDropdownTitle" style="top: -34px;left: 12px;">
+                                                            <p class="mb-0 fontHeading">Variable</p>
+                                                            <svg width="7" height="5" viewBox="0 0 7 5" class="k7I8K9fJ arrow" style="--icon-width:0.7rem; --icon-height:0.5rem;transform: rotate(0deg);"><path pid="0" d="M3.5 5L0 0h7L3.5 5z" fill="currentColor"></path></svg>
+                                                        </div>
+                                                        <ul class="p-0 m-0">
+                                                            <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout" data-style="normal" data-weight="300">
+                                                                <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                                <div class="radioShape rounded-circle border-2 border"></div>
+                                                                <p class="mb-0">Light</p>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout" data-style="italic" data-weight="300">
+                                                                <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                                <div class="radioShape rounded-circle border-2 border"></div>
+                                                                <p class="mb-0">Light Italic</p>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout" data-style="normal" data-weight="400">
+                                                                <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                                <div class="radioShape rounded-circle border-2 border"></div>
+                                                                <p class="mb-0">Regular</p>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout" data-style="italic" data-weight="400">
+                                                                <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                                <div class="radioShape rounded-circle border-2 border"></div>
+                                                                <p class="mb-0">Italic</p>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout" data-style="normal" data-weight="500">
+                                                                <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                                <div class="radioShape rounded-circle border-2 border"></div>
+                                                                <p class="mb-0">Medium</p>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout" data-style="Italic" data-weight="500">
+                                                                <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                                <div class="radioShape rounded-circle border-2 border"></div>
+                                                                <p class="mb-0">Medium Italic</p>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout" data-style="normal" data-weight="700">
+                                                                <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                                <div class="radioShape rounded-circle border-2 border"></div>
+                                                                <p class="mb-0">Bold</p>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout" data-style="Italic" data-weight="700">
+                                                                <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                                <div class="radioShape rounded-circle border-2 border"></div>
+                                                                <p class="mb-0">Bold Italic</p>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout" data-style="normal" data-weight="900">
+                                                                <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                                <div class="radioShape rounded-circle border-2 border"></div>
+                                                                <p class="mb-0">Black</p>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout" data-style="Italic" data-weight="900">
+                                                                <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                                <div class="radioShape rounded-circle border-2 border"></div>
+                                                                <p class="mb-0">Black Italic</p>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout" data-style="normal" data-weight="900">
+                                                                <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                                <div class="radioShape rounded-circle border-2 border"></div>
+                                                                <p class="mb-0">Variable</p>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-3 position-relative fontStyle2 fontstyleLayout" data-style="Italic" data-weight="900">
+                                                                <input type="checkbox" class="w-100 position-absolute d-none h-100">
+                                                                <div class="radioShape rounded-circle border-2 border"></div>
+                                                                <p class="mb-0">Variable Italic</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center w-25 gap-4 rangeInputCard">
+                                                <div class="position-relative">
+                                                    <div class="d-flex align-items-center gap-3 dropdownTitle fontSizeTitle fw-bold">
+                                                        <p class="mb-0 inputTitle">Size</p>
+                                                        <p class="mb-0 weightVlue"><span class="inputValue">20</span><span>px</span></p>
+                                                    </div>
+                                                </div>
+                                                <input type="range" min="8" max="280" class="sizeInput" value="20">
+                                            </div>
+                                            <div class="align-items-center w-25 gap-4 rangeInputCard">
+                                                <div class="position-relative">
+                                                    <div class="d-flex align-items-center gap-3 dropdownTitle fontSizeTitle fw-bold w-25">
+                                                        <p class="mb-0 inputTitle">leading</p>
+                                                        <p class="mb-0 weightVlue"><span class="leadingValue">1.2</span><span>em</span></p>
+                                                    </div>
+                                                </div>
+                                                <input type="range" min="0.5" max="3" step="0.1" value="1.2" class="leadingInput">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-4 align-items-center justify-content-end rightCardHeader">
+                                        <p class="mb-0 fw-bold removeBlock">- Remove Block</p>
+                                        <p class="mb-0 fw-bold">+ Add Block</p>
+                                    </div>
+                                </div>
+                                <p style="column-count: 3;font-size: 20px;" class="my-3  text-dark textAreas bg-transparent border-0" contenteditable="true" data-id="Cities">
+                                    The research, which looked at more than 450,000 people across Europe, found that death rates from any cause were 26% higher among people who consumed two or more diet drinks a day, compared with those who had less than one a month. The reasons are unclear,
+                                    but previous studies have suggested that artificial sweeteners can trigger glucose intolerance and higher insulin levels in the blood. The Times has the story of a lawyer who won the jackpot on the German version of
+                                    “Who Wants to be aj Millionaire” - after spending 16 years re-enacting the television quiz in his basement. Jan Stroh built a replica of the set and studied nearly 35-thousand past questions to prepare for his appearance
+                                    on the programme, applying dozens of times before he was finally selected to take part. He plans to use some of his winnings to renovate his mock-up studio - and has treated himself to a tailored suit. Infant feeding
+                                    practices refer generally to meet the nutritional and immunological needs of the baby. A study of infant feeding practices was carried out on a sample of 100 mother and infant pairs. The results revealed that only 20%
+                                    of mothers in the study currently exclusively breastfeed their babies. It also shows that socio-economic factors like mother’s work status, marital status and educational attainment had direct bearing on these practices.
+                                    Employed mothers tend to cease from breastfeeding their babies and eventually stop and just resort to formula feeding as they go back to work. The study also showed that mothers who are married and living with their
+                                    partners are more likely to breastfeed their infants than single mothers.
+                                </p>
+                                <p class="text-end mb-0 mt-auto">+ Add Style</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-4 top-0 bg-white align-items-center justify-content-start mt-5">
+                        <p class="h-100 text-decoration-none fw-bold detailLicenceBtn h4 bg-transparent active" data-id="2">Details</p>
+                        <p class="h-100 text-decoration-none fw-bold detailLicenceBtn d-none d-lg-block text-secondary h4 bg-transparent" data-id="1">License</p>
+                    </div>
+                    <div data-id="2" id="Details" class="mt-5 sourceContent wow fadeInUp">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div>
+                                    <h4>Specifications</h4>
+                                    <div class="mt-5">
+                                        <div>
+                                            <div class="d-flex align-items-center border-top py-4">
+                                                <p class="w-50 fw-bold h5 mb-0">Family Name</p>
+                                                <p class="w-50 mb-0">Satoshi</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="d-flex align-items-center border-top py-4">
+                                                <p class="w-50 fw-bold h5 mb-0">Designed By</p>
+                                                <a class="w-50 mb-0">Indian Type Foundry</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="d-flex align-items-center border-top py-4">
+                                                <p class="w-50 fw-bold h5 mb-0">Category</p>
+                                                <p class="w-50 mb-0">Sans</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="d-flex align-items-center border-top py-4 cursor acardeon">
+                                                <p class="w-50 fw-bold h5 mb-0">Available Styles</p>
+                                                <div class="d-flex align-items-center justify-content-between w-50 ">
+                                                    <p class="mb-0">10 Static, 2 Variable</p>
+                                                    <svg width="7" height="5" viewBox="0 0 7 5" class="_6jX07zvC arrowAcardeon" style="--icon-width:0.7rem; --icon-height:0.5rem;"><path pid="0" d="M3.5 5L0 0h7L3.5 5z" fill="currentColor"></path></svg>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center border-top acardeonContent">
+                                                <div class="w-50"></div>
+                                                <div class="w-50 d-flex align-items-center justify-content-between">
+                                                    <ul class="list-unstyled p-0 m-0 lh-lg w-50">
+                                                        <li>Light</li>
+                                                        <li>Regular</li>
+                                                        <li>Medium</li>
+                                                        <li>Bold</li>
+                                                        <li>Black</li>
+                                                        <li>Variable</li>
+                                                    </ul>
+                                                    <ul class="list-unstyled p-0 m-0 lh-lg w-50">
+                                                        <li>Light Italic</li>
+                                                        <li>Italic</li>
+                                                        <li>Medium Italic</li>
+                                                        <li>Bold Italic</li>
+                                                        <li>Black Italic</li>
+                                                        <li>Variable Italic</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="d-flex align-items-center border-top py-4 cursor acardeon">
+                                                <p class="w-50 fw-bold h5 mb-0">Supported Languages</p>
+                                                <div class="d-flex align-items-center justify-content-between w-50 ">
+                                                    <p class="mb-0">135</p>
+                                                    <svg width="7" height="5" viewBox="0 0 7 5" class="_6jX07zvC arrowAcardeon" style="--icon-width:0.7rem; --icon-height:0.5rem;"><path pid="0" d="M3.5 5L0 0h7L3.5 5z" fill="currentColor"></path></svg>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center border-top acardeonContent">
+                                                <div class="w-50"></div>
+                                                <div class="w-50">
+                                                    <p>
+                                                        Afar, Afrikaans, Albanian, Aranese, Aromanian, Aymara, Azeri (Latin), Basque, Bemba, Bislama, Bosnian, Breton, Catalan, Chamorro, Cheyenne, Chichewa, Chuukese, Cofán, Cornish, Crimean Tatar, Croatian, Czech, Danish, Dutch, English, Esperanto, Estonian,
+                                                        Faroese, Fijian, Finnish, French, Frisian, Friulian, Ga, Galician, Ganda, German, Gikuyu, Greenlandic, Guaraní, Guarani, Gwich’in, Haitian, Hawaiian, Hungarian, Icelandic, Ido, Igbo, Indonesian,
+                                                        Interlingua, Irish Gaelic, Italian, Javanese, Karelian, Kashubian, Kinyarwanda, Kiribati, Kirundi, Kituba, Kurdish (Latin), Ladin, Latvian, Lithuanian, Luxemburgish, Malagasy, Malay, Maltese, Maninka,
+                                                        Manx, Māori, Marshallese, Náhuatl, Nauruan, Navajo, Ndebele (Northern), Ndebele (Southern), Norfuk, Norn, Norwegian (Bokmål), Norwegian (Nynorsk), Nyanja, Occitan, Oromo, Otomi, Palauan, Papiamento,
+                                                        Pedi, Polish, Portuguese, Quechua, Rarotongan, Rhaeto-Romanic, Romaji, Romani, Romanian, Sámi (Inari), Sámi (Lule), Sámi (Northern), Sámi (Southern), Samoan, Sango, Sardinian, Scottish Gaelic, Serbian
+                                                        (Latin), Seychelles Creole, Shona, Silesian, Slovak, Slovene, Somali (Latin), Sorbian, Sotho, Spanish, Swahili, Swati, Swedish, Tagalog (Filipino), Tahitian, Tetum, Tok Pisin, Tokelauan, Tongan,
+                                                        Tsonga, Tswana, Turkish, Tuvalu, Twi, Ulithian, Umbundu, Veps, Vietnamese, Welsh, Wolof, Xhosa, Zulu
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="d-flex align-items-center border-top py-4">
+                                                <p class="w-50 fw-bold h5 mb-0">Version</p>
+                                                <p class="w-50 mb-0">1.0</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="d-flex align-items-center border-top py-4">
+                                                <p class="w-50 fw-bold h5 mb-0">Fontshare Debut</p>
+                                                <p class="w-50 mb-0">13 Mar 2021</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="d-flex align-items-center border-top py-4">
+                                                <p class="w-50 fw-bold h5 mb-0">Tags / Keywords</p>
+                                                <p class="w-50 mb-0">Magazines, Logos, Branding</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="d-flex align-items-center border-top py-4">
+                                                <p class="w-50 fw-bold h5 mb-0">License</p>
+                                                <p class="w-50 mb-0">Closed Source / ITF Free Font License</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div>
+                                    <h4 class="mb-4">Story</h4>
+                                    <p class="pt-2 lh-lg">
+                                        Satoshi is a modernist sans serif typeface. Its design combines typically grotesk-style letterforms, with some characters that are quite geometrically-designed. In terms of its appearance, Satoshi was inspired by Modernism and Industrial-Era graphic and
+                                        typographic design. The family has five weights on offer, ranging from Light to Black. It is an excellent choice for use in branding, editorial, and poster design. Satoshi’s lowercase ‘a’ and ‘g’ are double-storied;
+                                        however, single-storied alternates are available, through an OpenType feature. The fonts’ other OpenType features include 10 ligatures per font, as well as alternate versions of the ‘G’ and ’t’. The default numeral
+                                        style in each of the fonts is proportional lining figures; three other styles of numbers are included, too. There are tabular lining figures, as well as numerators and denominators for typesetting fractions. The
+                                        fonts’ lining figures have the same height as the uppercase letters. The lowercase’s ascenders are drawn to be slightly taller than the common height of the capital letters and numerals. Each Satoshi font contains
+                                        ten directional-arrow glyphs, as well as six glyphs of circles, squares, and triangles. There is also a peace sign in the character set, a smiling-face emoji, a check mark, and two versions of the numbers one through
+                                        nine, each enclosed inside of differently-filled circles. Satoshi is the work of Deni Anggara, an Indonesian designer based in Medan.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-id="1" id="License" class="mt-5 sourceContent secoundSourceContent wow fadeInUp">
+                        <div class="row">
+                            <div class="col-md-6" id="licenseListFixed">
+                                <div class="d-flex mt-1 align-items-center justify-content-between fw-bold">
+                                    <p class="mb-lg-0 mb-4">
+                                        ITF Free Font License (FFL)
+                                    </p>
+                                    <p class="mb-0 text-secondary d-none d-lg-block">
+                                        Version 1.0 - 20 Jan 2021
+                                    </p>
+                                </div>
+                                <div class="licenseList d-none d-lg-block mt-5">
+                                    <div class="d-flex align-items-center justify-content-between border-dark border-top">
+                                        <div class="w-50">
+                                            <a href="#Notice" class="text-start active">Notice to User</a>
+                                        </div>
+                                        <div class="w-50">
+                                            <a href="#Derivative" class="text-start">05 Derivative Work</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between border-dark border-top">
+                                        <div class="w-50">
+                                            <a href="#Definitions" class="text-start">Definitions</a>
+                                        </div>
+                                        <div class="w-50">
+                                            <a href="#Warranty" class="text-start">06 Warranty and Liability</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between border-dark border-top">
+                                        <div class="w-50">
+                                            <a href="#Grant" class="text-start">01 Grant of License</a>
+                                        </div>
+                                        <div class="w-50">
+                                            <a href="#Support" class="text-start">07 Support</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between border-dark border-top">
+                                        <div class="w-50">
+                                            <a href="#Limitations" class="text-start">02 Limitations of Usage</a>
+                                        </div>
+                                        <div class="w-50">
+                                            <a href="#Termination" class="text-start">08 Termination</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between border-dark border-top">
+                                        <div class="w-50">
+                                            <a href="#Embedding" class="text-start">03 Embedding</a>
+                                        </div>
+                                        <div class="w-50">
+                                            <a href="#Provisions" class="text-start">09 Final Provisions</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between border-dark border-top ps-0">
+                                        <div class="w-50 border-dark border-bottom ps-5">
+                                            <a href="#Third-party" class="text-start">04 Third-party Use</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 ms-auto">
+                                <div class="overflw">
+                                    <h5 id="Notice" class="fw-bold">Notice to User</h5>
+                                    <p class="my-5">
+                                        Indian Type Foundry designs, produces and distributes font software as digital fonts to end users worldwide. In addition to commercial fonts that are available for a fee, ITF also offers several fonts which can be used free of charge. The free fonts are
+                                        distributed through a dedicated platform called www.fontshare.com (“Fontshare”) to end users worldwide. These free fonts are subject to this legally binding EULA between the Indian Type Foundry (“Indian Type Foundry”
+                                        or “Licensor”) and you (“Licensee”).
+                                    </p>
+                                    <p class="mb-5">
+                                        You acknowledge that the Font Software and designs embodied therein are protected by the copyright, other intellectual property rights and industrial property rights and by international treaties. They are and remain at all times the intellectual property
+                                        of the Indian Type Foundry.
+                                    </p>
+                                    <p class="mb-5">
+                                        In addition to direct download, Fontshare also offers these free fonts via Fonthsare API using a code. In this case, the Font Software is delivered directly from the servers used by Indian Type Foundry to the Licensee's website, without the Licensee having
+                                        to download the Font Software
+                                    </p>
+                                    <p class="mb-5">
+                                        By downloading, accessing the API, installing, storing, copying or using one of any Font Software, you agree to the following terms.
+                                    </p>
+                                    <h5 id="Definitions" class="fw-bold">Definitions</h5>
+                                    <p class="my-5">
+                                        “Font Software” refers to the set of computer files or programs released under this license that instructs your computer to display and/or print each letters, characters, typographic designs, ornament and so forth. Font Software includes all bitmap and
+                                        vector representations of fonts and typographic representations and embellishments created by or derived from the Font Software.
+                                    </p>
+                                    <p class="mb-5">
+                                        “Original Version” refers to the Font Software as distributed by the Indian Type Foundry as the copyright holder.
+                                    </p>
+                                    <p class="mb-5">
+                                        “Derivative Work” refers to the pictorial representation of the font created by the Font Software, including typographic characters such as letters, numerals, ornaments, symbols, or punctuation and special characters.
+                                    </p>
+                                    <h5 id="Grant" class="fw-bold">01 Grant of License</h5>
+                                    <p class="my-5">
+                                        You are hereby granted a non-exclusive, non-assignable, non-transferrable, terminable license to access, download and use the Font Software for your personal or commercial use for an unlimited period of time for free of charge.
+                                    </p>
+                                    <p class="mb-5">
+                                        You may use the font Software in any media (including Print, Web, Mobile, Digital, Apps, ePub, Broadcasting and OEM) at any scale, at any location worldwide.
+                                    </p>
+                                    <p class="mb-5">
+                                        You may use the Font Software to create logos and other graphic elements, images on any surface, vector files or other scalable drawings and static images.
+                                    </p>
+                                    <p class="mb-5">
+                                        You may use the Font Software on any number of devices (computer, tablet, phone). The number of output devices (Printers) is not restricted.
+                                    </p>
+                                    <p class="mb-5">
+                                        You may make only such reasonable number of back-up copies suitable to your permitted use.
+                                    </p>
+                                    <p class="mb-5">
+                                        You may but are not required to identify Indian Type Foundry Fonts in your work credits.
+                                    </p>
+                                    <h5 id="Limitations" class="fw-bold">02 Limitations of Usage</h5>
+                                    <p class="my-5">
+                                        You may not modify, edit, adapt, translate, reverse engineer, decompile or disassemble, alter or otherwise copy the Font Software or the designs embodied therein in whole or in part, without the prior written consent of the Licensor.
+                                    </p>
+                                    <p class="mb-5">
+                                        The Fonts may not - beyond the permitted copies and the uses defined herein - be distributed, duplicated, loaned, resold or licensed in any way, whether by lending, donating or give otherwise to a person or entity. This includes the distribution of the
+                                        Fonts by e-mail, on USB sticks, CD-ROMs, or other media, uploading them in a public server or making the fonts available on peer-to-peer networks. A passing on to external designers or service providers (design
+                                        agencies, repro studios, printers, etc.) is also not permitted.
+                                    </p>
+                                    <p class="mb-5">
+                                        You are not allowed to transmit the Font Software over the Internet in font serving or for font replacement by means of technologies such as but not limited to EOT, Cufon, sIFR or similar technologies that may be developed in the future without the prior
+                                        written consent of the Licensor.
+                                    </p>
+                                    <h5 id="Embedding" class="fw-bold">03 Embedding</h5>
+                                    <p class="my-5">
+                                        You may embed the Font Software in PDF and other digital documents provided that is done in a secured, read-only mode. It must be ensured beyond doubt that the recipient cannot use the Font Software to edit or to create new documents. The design data
+                                        (PDFs) created in this way and under these created design data (PDFs) may be distributed in any number.
+                                    </p>
+                                    <p class="mb-5">
+                                        The extraction of the Font Software in whole or in part is prohibited.
+                                    </p>
+                                    <h5 id="Third-party" class="fw-bold">04 Third-party use, Commercial print service provider</h5>
+                                    <p class="my-5">
+                                        You may include the Font Software in a non-editable electronic document solely for printing and display purposes and provide that electronic document to the commercial print service provider for the purpose of printing. If the print service needs to install
+                                        the fonts, they too need to download the Font Software from the Licensor's website.
+                                    </p>
+                                    <h5 id="Derivative" class="fw-bold">05 Derivative Work</h5>
+                                    <p class="my-5">
+                                        You are allowed to make derivative works as far as you use them for your personal or commercial use. However, you cannot modify, make changes or reverse engineer the original font software provided to you. Any derivative works are the exclusive property
+                                        of the Licensor and shall be subject to the terms and conditions of this EULA. Derivative works may not be sub-licensed, sold, leased, rented, loaned, or given away without the express written permission of the
+                                        Licensor.
+                                    </p>
+                                    <h5 id="Warranty" class="fw-bold">06 Warranty and Liability</h5>
+                                    <p class="my-5">
+                                        BECAUSE THIS SOFTWARE IS LICENSED FREE OF CHARGE, INDIAN TYPE FOUNDRY MAKES NO WARRANTIES, EXPRESS OR IMPLIED AS TO THE MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR OTHERWISE. THE FONT SOFTWARE WAS NOT MANUFACTURED FOR USE IN MANUFACTURING CONTROL
+                                        DEVICES OR NAVIGATION DEVICES OR IN CIRCUMSTANCES THAT COULD RESULT IN ENVIRONMENTAL DAMAGE OR PERSONAL INJURY. WITHOUT LIMITING THE FOREGOING, INDIAN TYPE FOUNDRY SHALL IN NO EVENT BE LIABLE TO THE LICENSED USER
+                                        OR ANY OTHER THIRD PARTY FOR ANY DIRECT, CONSEQUENTIAL OR INCIDENTAL DAMAGES, INCLUDING DAMAGES FROM LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION NOR FOR LOST PROFITS OR SAVINGS
+                                        ARISING OUT OF THE USE OR INABILITY TO USE THE PRODUCT EVEN IF NOTIFIED IN ADVANCE, UNDER NO CIRCUMSTANCES SHALL INDIAN TYPE FOUNDRY’S LIABILITY EXCEED THE REPLACEMENT COST OF THE SOFTWARE.
+                                    </p>
+                                    <p class="my-5">
+                                        IF LICENSEE CHOOSES TO ACCESS THE FONT SOFTWARE THROUGH A CODE (API), IT MAY HAVE A DIRECT IMPACT ON LICENSEE'S WEBSITE OR APPLICATIONS. INDIAN TYPE FOUNDRY IS NOT RESPONSIBLE OR LIABLE FOR ANY INTERRUPTION, MALFUNCTION, DOWNTIME OR OTHER FAILURE OF THE
+                                        WEBSITE OR ITS API.
+                                    </p>
+                                    <h5 id="Support" class="fw-bold">07 Updates, Maintenance and Support Services</h5>
+                                    <p class="my-5">
+                                        Licensor will not provide you with any support services for the Software under this Agreement.
+                                    </p>
+                                    <h5 id="Termination" class="fw-bold">08 Termination</h5>
+                                    <p class="my-5">
+                                        Any breach of the terms of this agreement shall be a cause for termination, provided that such breach is notified in writing to the Licensee by the Licensor and the Licensee failed to rectify the breach within 30 days of the receipt of such notification.
+                                    </p>
+                                    <p class="my-5">
+                                        In the event of termination and without limitation of any remedies under law or equity, you must delete the Font Software and all copies thereof. Proof of this must be provided upon request of the Licensor.
+                                    </p>
+                                    <p class="my-5">
+                                        We reserve the right to claim damages for the violation of the conditions.
+                                    </p>
+                                    <h5 id="Provisions" class="fw-bold">09 Final Provisions</h5>
+                                    <p class="my-5">
+                                        If individual provisions of this agreement are or become invalid, the validity of the remaining provisions shall remain unaffected. Invalid provisions shall be replaced by mutual agreement by such provisions that are suitable to achieve the desired economic
+                                        purpose, taking into account the interests of both parties. The same shall apply mutatis mutandis to the filling of any gaps which may arise in this agreement.
+                                    </p>
+                                    <p class="my-5">
+                                        This contract is subject to laws of the Republic of India. Place of performance and exclusive place of jurisdiction for all disputes between the parties arising out of or in connection with this contract is, as far as legally permissible, Ahmedabad, India.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+    </main>
+
+    <!-- footer -->
+
+    <footer class="d-flex justify-content-center align-items-center mt-5 text-secondary fw-bold">
+        <p class="mb-0 text-center">Copyright © 2021 — 2022 Indian Type Foundry. All rights reserved.</p>
+    </footer>
+
+    <script src="js/fonts.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

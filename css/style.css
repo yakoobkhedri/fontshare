@@ -1,0 +1,889 @@
+body.dark {
+    background-color: black!important;
+    color: white;
+}
+
+@font-face {
+    font-family: "Slab";
+    src: url(../fonts/slab.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Display";
+    src: url(../fonts/display.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Script";
+    src: url(../fonts/script.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Handwritten";
+    src: url(../fonts/handwriting.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "IRANSansX-Regular";
+    src: url(../fonts/IRANSansX-Regular.woff) format("woff");
+}
+
+body {
+    user-select: none;
+}
+
+textarea::-webkit-scrollbar,
+.card::-webkit-scrollbar {
+    width: 0;
+}
+
+textarea {
+    outline: none;
+    resize: none;
+}
+
+input {
+    background-color: transparent;
+}
+
+header {
+    height: 160px;
+}
+
+.menu>div {
+    width: 25%;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.menu>div:hover {
+    border-bottom: 1px solid black!important;
+}
+
+.menu>div.dark:hover {
+    border-bottom: 1px solid white!important;
+}
+
+.overlay {
+    transition: all .4s ease-out;
+    left: 0;
+    right: 0;
+    bottom: -400px;
+}
+
+.overlay.active {
+    bottom: 0;
+    background-color: black;
+}
+
+.overlay.dark.active {
+    bottom: 0;
+    background-color: white;
+}
+
+header>div>p {
+    width: 244px;
+}
+
+.stickyContent {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: white;
+}
+
+.stickyContent.dark {
+    background-color: black!important;
+    z-index: 999;
+}
+
+.stickyContent>form,
+.themeItems.active,
+.cards>.card:hover .hoverShow,
+.rangeInputCard,
+.faqAcardeon:hover .closeOpenBtns {
+    display: flex;
+}
+
+.fontPage {
+    transition: all .4s ease-out;
+    color: black;
+    z-index: 9;
+}
+
+.categoryPropertyPersonality,
+.yourTextParent {
+    width: 75%;
+}
+
+.changeAllSize,
+.cityName,
+.darkJustify,
+.cards>.card .rightCardHeader {
+    width: 25%;
+}
+
+.searchInputParent {
+    width: 34%;
+}
+
+.searchInput::placeholder,
+.fontSizeTitle.dark,
+.rangeInputValue:hover,
+.reset:hover,
+.fontSizeTitle:hover {
+    color: #aabebe;
+}
+
+.searchInput:focus,
+.secondMenu li.active {
+    outline: none;
+    border-bottom: 1px solid black!important;
+}
+
+.yourText {
+    outline: none;
+    border-bottom: 1px solid #dee2e6!important;
+    width: 66%;
+}
+
+.dropdownTitle,
+.btns p,
+.justify svg,
+main>.sectionThree p,
+.setOutlineSolid,
+.basicFullSet,
+.detailLicenceBtn {
+    color: #aabebe;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.justify svg {
+    height: 30px;
+}
+
+.justify svg.active,
+.btns p.active,
+main>.sectionThree p.active,
+.dropdownTitle:hover,
+.btns p:hover,
+.justify svg:hover,
+main>.sectionThree p:hover,
+.sectionThree p.active,
+.fontPage.dark.active,
+.setOutlineSolid.active,
+.setOutlineSolid:hover,
+.basicFullSet.active,
+.basicFullSet:hover,
+.detailLicenceBtn:hover,
+.detailLicenceBtn.active {
+    color: black!important;
+}
+
+.justify svg.dark.active,
+.btns p.dark.active,
+.dropdownTitle.dark:hover,
+.btns p.dark:hover,
+.justify svg.dark:hover,
+.sectionThree p.dark:hover,
+.sectionThree p.dark.active,
+.fontSizeTitle.dark:hover,
+.rangeInputValue.dark:hover,
+.reset.dark:hover,
+.fontSizeTitle.dark:hover,
+.typedText.dark,
+.fontPage.active,
+.fontPage.dark {
+    color: white;
+}
+
+.rangeInputValue,
+.fontSizeTitle,
+.logoName {
+    color: black;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.reset {
+    color: #aabebe;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.reset:hover,
+.text-darkk,
+.cards .card:hover p,
+.cards .card:hover svg {
+    color: black!important;
+}
+
+.arrow {
+    transform: rotate(90deg);
+}
+
+.dropdownList,
+.fontStyleDropdown,
+.categoryDropdown,
+.PersonalityDropdown {
+    width: 204px;
+    top: -15px;
+    left: -23px;
+    cursor: default;
+    color: black;
+    display: none;
+    z-index: 9;
+}
+
+.dropdownList.open,
+.fontStyleDropdown.open,
+.categoryDropdown.open,
+.PersonalityDropdown.open,
+.lists.open,
+.tabContent.tabContentOne,
+.rangeInputCard:hover .weightVlue,
+.ClosedSource,
+.closeBtn.open {
+    display: block;
+}
+
+.returnIcon {
+    cursor: pointer;
+    color: #aabebe;
+}
+
+.radioShape {
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.radioShape.active {
+    background-color: black;
+    border-color: black!important;
+}
+
+.dropdownList ul,
+.fontStyleDropdown ul,
+.categoryDropdown ul,
+.PersonalityDropdown ul {
+    line-height: 33px;
+}
+
+.dropdownList li,
+.fontStyleDropdown li,
+.categoryDropdown li,
+.activeDropdownTitle,
+.PersonalityDropdown li,
+.acardeonButton {
+    cursor: pointer;
+}
+
+.dropdownList li:hover .radioShape,
+.fontStyleDropdown li:hover .radioShape,
+.categoryDropdown li:hover .radioShape,
+.PersonalityDropdown li:hover .radioShape,
+.faqAcardeon:hover {
+    border-color: black!important;
+}
+
+.themes {
+    width: 28px;
+}
+
+.themeItems,
+.closeBtn {
+    top: 21px;
+    display: none;
+}
+
+.selectedTheme,
+.darkMode {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.darkMode,
+.secondMenu li,
+.faqAcardeon {
+    transition: all .4s;
+}
+
+.darkMode:hover {
+    transform: rotate(180deg);
+}
+
+main>.sectionThree {
+    margin-top: 6rem;
+    border-bottom: 0;
+}
+
+main>.sectionThree .h-7 {
+    font-size: 12px;
+}
+
+.sortLine {
+    height: 1px;
+    width: 140px;
+    background-color: #aabebe;
+}
+
+.tabContent,
+.Excerpts,
+.Cities,
+.close,
+.lists,
+.cards>.card .hoverShow,
+.hoverShow.hidden,
+.rangeInputCard:hover .inputTitle,
+.rangeInputCard .weightVlue,
+.openBtn.close {
+    display: none;
+}
+
+.text-darkk.dark,
+.cards>.card.dark:hover p,
+.cards .card.dark:hover svg,
+.reset.dark:hover,
+.logoName.dark {
+    color: white!important;
+}
+
+.cards {
+    display: block;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.cards>.card {
+    min-height: 455px;
+    background-color: transparent;
+    transition: all .4s;
+}
+
+.fontsCard>.card {
+    min-height: 262px;
+}
+
+.cards .card svg,
+.cards .card p {
+    color: #aabebe;
+    transition: all .4s;
+    outline: none;
+}
+
+.cards .card {
+    border: 1px solid #aabebe!important;
+}
+
+.cards>.card:hover {
+    border: 1px solid black!important;
+}
+
+.cards>.card.dark {
+    border: 1px solid #3a3a3a!important;
+}
+
+.cards>.card.dark:hover {
+    border: 1px solid white!important;
+}
+
+.hoverShow {
+    height: 18px;
+}
+
+.rangeInputCard .position-relative {
+    width: 55px;
+}
+
+.typedText {
+    font-size: 39px;
+    font-weight: 400;
+    outline: none;
+    resize: none;
+}
+
+.lightStyle {
+    font-style: normal;
+    font-weight: 300;
+}
+
+.lightItalic {
+    font-weight: 300;
+    font-style: italic;
+}
+
+.regular {
+    font-style: normal;
+    font-weight: 400;
+}
+
+.italic {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.medium {
+    font-style: normal;
+    font-weight: 500;
+}
+
+.mediumItalic {
+    font-style: italic;
+    font-weight: 500;
+}
+
+.black {
+    font-style: normal;
+    font-weight: 900;
+}
+
+footer {
+    height: 82px;
+    background-color: #f8f8f8;
+    z-index: 9;
+}
+
+footer.dark {
+    height: 82px;
+    background-color: #191818;
+}
+
+
+/* range input styles */
+
+input[type=range] {
+    height: 32px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 0px 0px 0px #aabebe;
+    background: #aabebe;
+    border-radius: 0px;
+    border: 0px solid #aabebe;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #aabebe;
+    border: 1px solid #aabebe;
+    height: 20px;
+    width: 20px;
+    border-radius: 43px;
+    background: #FFFFFF;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -12px;
+    transition: all .4s;
+}
+
+input[type=range]::-webkit-slider-thumb:hover {
+    background: black;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #aabebe;
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 0px 0px 0px #aabebe;
+    background: #aabebe;
+    border-radius: 0px;
+    border: 0px solid #aabebe;
+}
+
+input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 0px #aabebe;
+    border: 1px solid #aabebe;
+    height: 20px;
+    width: 20px;
+    border-radius: 43px;
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: #aabebe;
+    border: 0px solid #aabebe;
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px #aabebe;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: #aabebe;
+    border: 0px solid #aabebe;
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px #aabebe;
+}
+
+input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 0px 0px 0px #aabebe;
+    border: 1px solid #aabebe;
+    height: 20px;
+    width: 20px;
+    border-radius: 43px;
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: #aabebe;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    background: #aabebe;
+}
+
+.goBack {
+    border-right: 1px solid #aabebe;
+}
+
+.baseText {
+    font-size: 217px;
+}
+
+.sources {
+    height: 80px;
+}
+
+.sourceBtn {
+    color: black;
+    background-color: transparent;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sourceBtn.active {
+    color: white;
+    background-color: black;
+}
+
+.secoundSourceContent,
+.closeOpenBtns {
+    display: none;
+}
+
+#licenseListFixed,
+#licenseListFixed2 {
+    background: white;
+    left: 0;
+    bottom: 0;
+    top: 99px;
+}
+
+.licenseList>div {
+    padding-left: 3rem;
+    user-select: none;
+    cursor: pointer;
+    height: 88px;
+}
+
+.licenseList>div>div {
+    height: 100%;
+}
+
+.licenseList a::before {
+    content: '';
+    position: absolute;
+    background: black;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    left: -36px;
+    top: 37px;
+}
+
+.licenseList a.active::before {
+    width: 13px;
+    height: 13px;
+}
+
+.licenseList a {
+    text-decoration: none;
+    color: #0e100e;
+    font-weight: bold;
+    transition: all .4s;
+    position: relative;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.licenseList a:hover {
+    color: #555f57;
+}
+
+.word {
+    font-size: 360px;
+    font-weight: bold;
+    z-index: 9;
+}
+
+.line {
+    height: 1px;
+    background-color: lightgrey;
+}
+
+.wordBlock {
+    width: 80px;
+    height: 80px;
+    border: 1px solid lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 37px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.wordBlock:hover,
+.wordBlock.active {
+    border: 1px solid black;
+}
+
+.goBack:hover,
+.secondMenu li:hover,
+.secondMenu li.active {
+    border-bottom: 1px solid black;
+}
+
+#FullSetParent,
+.acardeonContent,
+.acardeonContents {
+    max-height: 0;
+    overflow: hidden;
+    transition: all .4s;
+    padding: 0!important;
+}
+
+#FullSetParent.active,
+.acardeonContent.active,
+.acardeonContents.active {
+    max-height: 2000px;
+    padding: 20px 0!important;
+}
+
+.arrowAcardeon.active {
+    transition: all .4s;
+}
+
+.arrowAcardeon.active {
+    transform: rotate(180deg);
+}
+
+.word {
+    -webkit-text-stroke: 3px black;
+    color: black;
+}
+
+.word.outline {
+    color: transparent!important;
+}
+
+#wordsParent {
+    max-height: 794px;
+    overflow-y: auto;
+    transition: all .4s;
+}
+
+#wordsParent.active {
+    max-height: 2000px;
+}
+
+.overflw {
+    overflow-y: auto;
+    height: 640px;
+    scroll-behavior: smooth;
+}
+
+#wordsParent::-webkit-scrollbar,
+.overflw::-webkit-scrollbar {
+    width: 0;
+}
+
+.cursor,
+.removeBlock {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+    body.active {
+        overflow: hidden;
+    }
+    .searchIcon,
+    .close {
+        cursor: pointer;
+    }
+    .searchIcon.closed,
+    .HamIcon.closed {
+        display: none;
+    }
+    .close.show,
+    .stickyContent.active,
+    .stickyContent>form {
+        display: block;
+    }
+    header {
+        height: 63px;
+    }
+    .categoryPropertyPersonality {
+        width: 100%;
+    }
+    .categoryPropertyPersonality>div>div,
+    .changeAllSize,
+    .cityName,
+    .darkJustify {
+        border-bottom: 1px solid #303030!important;
+        padding: 13px 2px!important;
+        width: 100%!important;
+    }
+    .yourTextParent {
+        width: 100%!important;
+    }
+    .yourTextParent2 {
+        width: auto!important;
+    }
+    .yourText {
+        border-bottom: 1px solid #303030!important;
+        width: 100%!important;
+    }
+    .searchInputParent {
+        width: 100%;
+        border-bottom: 1px solid #303030!important;
+    }
+    .fontSizeTitle,
+    .searchInputParent,
+    .yourText,
+    .tabs {
+        color: #aabebe;
+        transition: all .4s;
+    }
+    .fontSizeTitle:hover,
+    .dropdownTitle:hover,
+    .cityName p:hover,
+    .justify svg:hover,
+    .justify svg.active,
+    .btns p.active,
+    .searchInputParent:hover,
+    .searchInputParent:hover input::placeholder,
+    .searchInputParent input:focus::placeholder,
+    .yourText:hover,
+    .yourText:hover input::placeholder,
+    .yourText input:focus::placeholder,
+    .tabs:hover,
+    .tabs.active {
+        color: white;
+        cursor: pointer;
+    }
+    .searchInputParent input:focus,
+    .yourText input:focus {
+        border-bottom: 1px solid white!important;
+        color: white;
+    }
+    .stickyContent {
+        position: fixed;
+        background: black;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        top: 62px;
+        z-index: 9;
+        padding: 2px 17px;
+        transition: all .4s;
+        display: none;
+    }
+    .stickyContent>form:first-child {
+        border-bottom: 0!important;
+    }
+    .fontStyleDropdown,
+    .categoryDropdown,
+    .PersonalityDropdown {
+        top: 2px;
+    }
+    .dropdownList {
+        top: -14px;
+    }
+    .mt-custom {
+        margin-top: 275px;
+    }
+    main>.dsectionThreeiv {
+        border-bottom: 1px solid #aabebe;
+        margin-top: 59px;
+    }
+    .cards {
+        display: block;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cards>.card:hover .hoverShow,
+    .ClosedSource {
+        display: none!important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .goBack {
+        border: none;
+        padding: 0!important;
+    }
+    .cards {
+        display: block;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .cards>.card .rightCardHeader {
+        width: 52%!important;
+    }
+    .wordBlock {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .overflw {
+        height: auto;
+    }
+    .secoundSourceContent {
+        display: block;
+    }
+    .showBtn {
+        display: none;
+    }
+    .baseText {
+        font-size: 82px;
+    }
+}

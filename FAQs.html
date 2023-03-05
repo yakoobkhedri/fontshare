@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <title>faqs</title>
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="border d-flex align-items-center px-xl-4">
+        <div class="d-flex align-items-center justify-content-between justify-content-xl-around fw-bold h-100 w-100">
+            <a class="h1 fw-bold ps-4 ps-xl-0 text-decoration-none logoName w-25">
+            Fontshare<sup class="h6 fw-bold">TM</sup>
+            </a>
+            <div class="menu h-100 d-xl-flex d-none w-50">
+                <div class="p-5 position-relative overflow-hidden h-100 border-start d-flex align-items-center justify-content-center">
+                    <div class="position-absolute overlay h-100"></div>
+                    <a class="d-flex fontPage justify-content-center align-items-center text-decoration-none">
+                    Fonts
+                       <p class="position-absolute bottom-0" style="left: 14px">100</p>
+                    </a>
+                </div>
+                <div class="p-5 position-relative overflow-hidden h-100 border-start d-flex align-items-center justify-content-center">
+                    <div class="position-absolute overlay h-100"></div>
+                    <a class="d-flex fontPage justify-content-center align-items-center text-decoration-none">
+                    pairs
+                       <p class="position-absolute bottom-0" style="left: 14px">49</p>
+                    </a>
+                </div>
+                <div class="p-5 position-relative overflow-hidden h-100 border-start d-flex align-items-center justify-content-center">
+                    <div class="position-absolute overlay h-100"></div>
+                    <a class="d-flex fontPage justify-content-center align-items-center text-decoration-none">
+                        Licenses
+                    </a>
+                </div>
+                <div class="p-5 position-relative overflow-hidden h-100 border-start border-end d-flex align-items-center justify-content-center">
+                    <div class="position-absolute overlay h-100"></div>
+                    <a class="d-flex fontPage justify-content-center align-items-center text-decoration-none">
+                        <svg width="53" height="16" viewBox="0 0 53 16"><path pid="0" fill="currentColor" d="M0 3h53V0H0zM0 16h53v-3H0z"></path></svg>
+                    </a>
+                </div>
+            </div>
+            <p class="mb-0 d-xl-flex d-none justify-content-center align-items-center text-secondary fw-bold w-25">
+                No styles selected
+            </p>
+            <div class="h-100 fw-bold d-xl-none d-flex">
+                <div class="position-relative overflow-hidden h-100 px-4 w-auto border-start border-start d-flex align-items-center justify-content-center">
+                    <a class="d-flex text-secondary fontPage justify-content-center align-items-center text-decoration-none">
+                    0
+                    </a>
+                </div>
+                <div class=" h-100 d-xl-none d-flex">
+                    <div onclick="menuItems(this)" class="position-relative overflow-hidden h-100 px-4 w-auto border-start border-end d-flex align-items-center justify-content-center">
+                        <div class="position-absolute overlay h-100"></div>
+                        <a class="d-flex fontPage justify-content-center align-items-center text-decoration-none">
+                            <svg onclick="activeScroll()" class="HamIcon" width="24" height="16" viewBox="0 0 53 16"><path pid="0" fill="currentColor" d="M0 3h53V0H0zM0 16h53v-3H0z"></path></svg>
+                            <svg onclick="removeScroll()" class="close" width="19" height="19" viewBox="0 0 19 19"><path pid="0" fill="currentColor" d="M0 16.97L16.97 0l1.41 1.41L1.41 18.38z"></path><path pid="1" fill="currentColor" d="M1.41 0l16.97 16.97-1.41 1.41L0 1.41z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- main -->
+
+    <section class="mt-5 px-xl-5 px-3">
+        <div class="row pb-5">
+            <div class="col-12">
+                <h1 class="display-1 fw-bold">FAQs</h1>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+    <section class="d-flex position-sticky top-0 align-items-center position-sticky top-0 bg-white justify-content-between border-top border-bottom w-100" style="height: 76px;z-index: 99;">
+        <a class="d-flex gap-3 text-decoration-none text-dark btn align-items-center goBack justify-content-center py-4 px-5">
+            <p class="mb-0 d-lg-block d-none">Last updated on 11 Dec 2021</p>
+        </a>
+        <ul class="list-unstyled fw-bold secondMenu h-100 m-0 d-flex align-items-center justify-content-center gap-5">
+            <li class="h-100 secondMenuLi active">
+                <a href="#general" class="btn fw-bold h-100 d-flex align-items-center">General</a>
+            </li>
+
+            <li class="h-100 secondMenuLi">
+                <a href="#Usage" class="btn fw-bold h-100 d-flex align-items-center">Usage</a>
+            </li>
+
+            <li class="h-100 secondMenuLi">
+                <a href="#Technical" class="btn fw-bold h-100 d-flex align-items-center">Technical</a>
+            </li>
+
+            <li class="h-100 secondMenuLi">
+                <a href="#Privacy" class="btn fw-bold h-100 d-flex align-items-center">Privacy</a>
+            </li>
+        </ul>
+        <a class="d-md-flex fw-bold text-dark d-none gap-3 goBack text-decoration-none text-dark btn align-items-center justify-content-center border-start py-4 px-5">
+            fontshare@indiantypefoundry.com
+        </a>
+    </section>
+    <!--  -->
+    <section class="px-xl-5 px-3 my-5">
+        <div id="general">
+            <h3 class="my-5">General</h3>
+            <div class="border-top border-bottom py-3 faqAcardeon">
+                <div class="closeOpenBtns align-items-center justify-content-end gap-5 position-absolute end-0 me-5">
+                    <p class="mb-0 btn fw-bold">Copy link</p>
+                    <p class="mb-0 btn fw-bold openBtn">Open</p>
+                    <p class="mb-0 btn fw-bold closeBtn">Close</p>
+                </div>
+                <h1 class="mt-4 py-4 acardeonButton">What is Fontshare?</h1>
+                <div class="row py-4 acardeonContents">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6 h2">
+                        <p class="mb-5">
+                            Fontshare is a free fonts service founded by the Indian Type Foundry (ITF). Fontshare offers professional grade fonts that are free for personal and commercial use. You can either use a CSS code to access fonts directly from the Fontshare API, download
+                            an offline kit and self-host them or use them on your desktop to create anything you like.
+                        </p>
+                        <p class="mb-5">
+                            Currently there are two types of free fonts offered on Fontshare: “Closed Source” and “Open Source”. Closed Source fonts are proprietary freeware designed, produced and owned by the parent company of Fontshare, the Indian Type Foundry (ITF) and are governed
+                            by ITF’s Free Font License (FFL).
+                        </p>
+                        <p class="mb-5">
+                            Closed Source fonts are also exclusive to Fontshare, meaning you won’t find them anywhere else on the internet.
+                        </p>
+                        <p class="mb-5">
+                            Open Source fonts, on the other hand, are the property of their respective designers and publishers, and are governed by SIL Open Font License (OFL). Fontshare identifies top notch open source fonts from the internet, reviews their quality, fixes design
+                            or technical bugs, and hosts the latest versions on Fontshare so you don’t have to go anywhere else. All the fonts offered on Fontshare are free fonts of the highest standard.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top border-bottom py-3 faqAcardeon">
+                <div class="closeOpenBtns align-items-center justify-content-end gap-5 position-absolute end-0 me-5">
+                    <p class="mb-0 btn fw-bold">Copy link</p>
+                    <p class="mb-0 btn fw-bold openBtn">Open</p>
+                    <p class="mb-0 btn fw-bold closeBtn">Close</p>
+                </div>
+                <h1 class="mt-4 py-4 acardeonButton">How are Fontshare fonts different from other free fonts available on the internet?</h1>
+                <div class="row py-4 acardeonContents">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6 h2">
+                        <p class="mb-5">
+                            Most free fonts that are available online are of a poor quality. We pride ourselves on the quality and technical specification of all the fonts offered on Fontshare. You can determine the quality of a typeface by examining the drawing of letters, spacing,
+                            kerning, OpenType features, character sets, language support, the availability of weights, italics and newer font formats, such as variable fonts.
+                        </p>
+                        <p class="mb-5">
+                            All “Closed Source” fonts have undergone a thorough design process and are proprietary freeware designed, produced and owned by the Indian Type Foundry (ITF). These fonts have the same quality as ITF’s other commercial fonts. All Closed Source fonts are
+                            exclusive to Fontshare and are governed by ITF’s Free Font License (FFL).
+                        </p>
+                        <p class="mb-5">
+                            All Open Source fonts are not designed or owned by ITF, however, we make sure that these fonts go through our strict selection process before appearing on Fontshare. We only offer fonts from reputable foundries and designers that are original, have the
+                            highest design standards and are 100% free for both Commercial and Personal use.
+                        </p>
+                        <p class="mb-5">
+                            All Open Source fonts are governed by the SIL Open Font License (OFL). A large proportion of the free fonts available online are ripped-off versions of proprietary fonts and do not have enough information about the creator, so there is always the threat
+                            of legal action being taken by the original owner. This is why we do not distribute fonts that have dubious origins, have vague licensing terms, are partially free, or are just free for personal use. All Fontshare fonts are
+                            100% free for personal and commercial use and are backed by a proper EULA. Using Fontshare fonts means that you’re legally protected.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top border-bottom py-3 faqAcardeon">
+                <div class="closeOpenBtns align-items-center justify-content-end gap-5 position-absolute end-0 me-5">
+                    <p class="mb-0 btn fw-bold">Copy link</p>
+                    <p class="mb-0 btn fw-bold openBtn">Open</p>
+                    <p class="mb-0 btn fw-bold closeBtn">Close</p>
+                </div>
+                <h1 class="mt-4 py-4 acardeonButton">What is the difference between “Closed Source” and “Open Source” fonts?</h1>
+                <div class="row py-4 acardeonContents">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6 h2">
+                        <p class="mb-5">
+                            Both Open Source and Closed source fonts on Fontshare are 100% free for Commercial and Personal use, however, they are both governed by two separate EULAs.
+                        </p>
+                        <p class="mb-5">
+                            Closed Source fonts on Fonthsare are proprietary freeware designed, produced and owned by the Indian Type Foundry (ITF), and are governed by the ITF’s Free Font License (FFL). The design source of Closed Source fonts are not public and they cannot be
+                            modified or redistributed by other free font websites. Users must use the fonts supplied by ITF on the Fontshare platform as they appear. These fonts are also available exclusively on Fontshare, meaning you won’t find them
+                            anywhere else. If you see a website distributing one of our Closed Source fonts, they’re distributing it illegally and you should refrain from downloading our fonts from such websites.
+                        </p>
+                        <p class="mb-5">
+                            Open Source fonts are the property of their respective designers and are governed by the SIL Open Font License (OFL). The design sources of Open Source fonts are public, meaning anyone can modify the original fonts, recompile and redistribute them. You
+                            might see that some of the open source fonts that are offered on Fontshare are also available on other websites. But unlike other websites who host whatever they find, Fontshare identifies top-notch open source fonts, reviews
+                            their quality, fixes design or technical bugs, and hosts the latest versions on Fontshare. If you see an open source font hosted on Fontshare, you can rest assured that it’s the latest version and a free font of the highest
+                            standard.
+                        </p>
+                        <p class="mb-5">
+                            If you want to learn more about open source fonts, a detailed FAQ can be found here.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top border-bottom py-3 faqAcardeon">
+                <div class="closeOpenBtns align-items-center justify-content-end gap-5 position-absolute end-0 me-5">
+                    <p class="mb-0 btn fw-bold">Copy link</p>
+                    <p class="mb-0 btn fw-bold openBtn">Open</p>
+                    <p class="mb-0 btn fw-bold closeBtn">Close</p>
+                </div>
+                <h1 class="mt-4 py-4 acardeonButton">Who designs the fonts on Fontshare?</h1>
+                <div class="row py-4 acardeonContents">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6 h2">
+                        <p class="mb-5">
+                            All Closed Source fonts are created by the Type Designers who work for the Indian Type Foundry and who have designed all our other commercial fonts available on ITF. They have been paid in full, upfront for the amazing work they do. You can learn more
+                            about our designers on ITF's website.
+                        </p>
+                        <p class="mb-5">
+                            All Open Source fonts are designed and owned by their respective designers or foundries.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top border-bottom py-3 faqAcardeon">
+                <div class="closeOpenBtns align-items-center justify-content-end gap-5 position-absolute end-0 me-5">
+                    <p class="mb-0 btn fw-bold">Copy link</p>
+                    <p class="mb-0 btn fw-bold openBtn">Open</p>
+                    <p class="mb-0 btn fw-bold closeBtn">Close</p>
+                </div>
+                <h1 class="mt-4 py-4 acardeonButton">How do Fontshare make money?</h1>
+                <div class="row py-4 acardeonContents">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6 h2">
+                        <p class="mb-5">
+                            Fontshare does not make money. The entire service (fonts, website, development, hosting, servers, support etc.) is fully sponsored by the ITF in order to make quality fonts accessible to everyone for free.
+                        </p>
+                        <p class="mb-5">
+                            It’s not new for ITF to offer its services for a good cause. We’ve been licensing our fonts for free to students, educational institutions and to non-profit organizations for years now.
+                        </p>
+                        <p class="mb-5">
+                            Between 2014-2016, we also released several open-source fonts, including Poppins (which these days, can be found on most tech startup websites), Rajdhani, Khand, Hind and Teko to name just a few.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top border-bottom py-3 faqAcardeon">
+                <div class="closeOpenBtns align-items-center justify-content-end gap-5 position-absolute end-0 me-5">
+                    <p class="mb-0 btn fw-bold">Copy link</p>
+                    <p class="mb-0 btn fw-bold openBtn">Open</p>
+                    <p class="mb-0 btn fw-bold closeBtn">Close</p>
+                </div>
+                <h1 class="mt-4 py-4 acardeonButton">How do I submit fonts to Fontshare?</h1>
+                <div class="row py-4 acardeonContents">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6 h2">
+                        <p class="mb-5">
+                            Fontshare is a curated collection of free fonts of the highest standard. In order to maintain the quality, we do not allow everyone to upload fonts on our platform. However, if you have a design that you’d like to distribute for free, please email us:
+                            fontshare[at]indiantypefoundry.com.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top border-bottom py-3 faqAcardeon">
+                <div class="closeOpenBtns align-items-center justify-content-end gap-5 position-absolute end-0 me-5">
+                    <p class="mb-0 btn fw-bold">Copy link</p>
+                    <p class="mb-0 btn fw-bold openBtn">Open</p>
+                    <p class="mb-0 btn fw-bold closeBtn">Close</p>
+                </div>
+                <h1 class="mt-4 py-4 acardeonButton">Are you going to add fonts for other world languages?</h1>
+                <div class="row py-4 acardeonContents">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6 h2">
+                        <p class="mb-5">
+                            For now, we are just focusing on the Latin-based languages, however, we plan to expand the selection of fonts to include other world languages.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Usage">
+            <h3 class="my-5">Usage</h3>
+            <div class="border-top border-bottom py-3 faqAcardeon">
+                <div class="closeOpenBtns align-items-center justify-content-end gap-5 position-absolute end-0 me-5">
+                    <p class="mb-0 btn fw-bold">Copy link</p>
+                    <p class="mb-0 btn fw-bold openBtn">Open</p>
+                    <p class="mb-0 btn fw-bold closeBtn">Close</p>
+                </div>
+                <h1 class="mt-4 py-4 acardeonButton">What is Fontshare?</h1>
+                <div class="row py-4 acardeonContents">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6 h2">
+                        <p class="mb-5">
+                            Fontshare is a free fonts service founded by the Indian Type Foundry (ITF). Fontshare offers professional grade fonts that are free for personal and commercial use. You can either use a CSS code to access fonts directly from the Fontshare API, download
+                            an offline kit and self-host them or use them on your desktop to create anything you like.
+                        </p>
+                        <p class="mb-5">
+                            Currently there are two types of free fonts offered on Fontshare: “Closed Source” and “Open Source”. Closed Source fonts are proprietary freeware designed, produced and owned by the parent company of Fontshare, the Indian Type Foundry (ITF) and are governed
+                            by ITF’s Free Font License (FFL).
+                        </p>
+                        <p class="mb-5">
+                            Closed Source fonts are also exclusive to Fontshare, meaning you won’t find them anywhere else on the internet.
+                        </p>
+                        <p class="mb-5">
+                            Open Source fonts, on the other hand, are the property of their respective designers and publishers, and are governed by SIL Open Font License (OFL). Fontshare identifies top notch open source fonts from the internet, reviews their quality, fixes design
+                            or technical bugs, and hosts the latest versions on Fontshare so you don’t have to go anywhere else. All the fonts offered on Fontshare are free fonts of the highest standard.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top border-bottom py-3 faqAcardeon">
+                <div class="closeOpenBtns align-items-center justify-content-end gap-5 position-absolute end-0 me-5">
+                    <p class="mb-0 btn fw-bold">Copy link</p>
+                    <p class="mb-0 btn fw-bold openBtn">Open</p>
+                    <p class="mb-0 btn fw-bold closeBtn">Close</p>
+                </div>
+                <h1 class="mt-4 py-4 acardeonButton">How are Fontshare fonts different from other free fonts available on the internet?</h1>
+                <div class="row py-4 acardeonContents">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6 h2">
+                        <p class="mb-5">
+                            Most free fonts that are available online are of a poor quality. We pride ourselves on the quality and technical specification of all the fonts offered on Fontshare. You can determine the quality of a typeface by examining the drawing of letters, spacing,
+                            kerning, OpenType features, character sets, language support, the availability of weights, italics and newer font formats, such as variable fonts.
+                        </p>
+                        <p class="mb-5">
+                            All “Closed Source” fonts have undergone a thorough design process and are proprietary freeware designed, produced and owned by the Indian Type Foundry (ITF). These fonts have the same quality as ITF’s other commercial fonts. All Closed Source fonts are
+                            exclusive to Fontshare and are governed by ITF’s Free Font License (FFL).
+                        </p>
+                        <p class="mb-5">
+                            All Open Source fonts are not designed or owned by ITF, however, we make sure that these fonts go through our strict selection process before appearing on Fontshare. We only offer fonts from reputable foundries and designers that are original, have the
+                            highest design standards and are 100% free for both Commercial and Personal use.
+                        </p>
+                        <p class="mb-5">
+                            All Open Source fonts are governed by the SIL Open Font License (OFL). A large proportion of the free fonts available online are ripped-off versions of proprietary fonts and do not have enough information about the creator, so there is always the threat
+                            of legal action being taken by the original owner. This is why we do not distribute fonts that have dubious origins, have vague licensing terms, are partially free, or are just free for personal use. All Fontshare fonts are
+                            100% free for personal and commercial use and are backed by a proper EULA. Using Fontshare fonts means that you’re legally protected.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top border-bottom py-3 faqAcardeon">
+                <div class="closeOpenBtns align-items-center justify-content-end gap-5 position-absolute end-0 me-5">
+                    <p class="mb-0 btn fw-bold">Copy link</p>
+                    <p class="mb-0 btn fw-bold openBtn">Open</p>
+                    <p class="mb-0 btn fw-bold closeBtn">Close</p>
+                </div>
+                <h1 class="mt-4 py-4 acardeonButton">What is the difference between “Closed Source” and “Open Source” fonts?</h1>
+                <div class="row py-4 acardeonContents">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6 h2">
+                        <p class="mb-5">
+                            Both Open Source and Closed source fonts on Fontshare are 100% free for Commercial and Personal use, however, they are both governed by two separate EULAs.
+                        </p>
+                        <p class="mb-5">
+                            Closed Source fonts on Fonthsare are proprietary freeware designed, produced and owned by the Indian Type Foundry (ITF), and are governed by the ITF’s Free Font License (FFL). The design source of Closed Source fonts are not public and they cannot be
+                            modified or redistributed by other free font websites. Users must use the fonts supplied by ITF on the Fontshare platform as they appear. These fonts are also available exclusively on Fontshare, meaning you won’t find them
+                            anywhere else. If you see a website distributing one of our Closed Source fonts, they’re distributing it illegally and you should refrain from downloading our fonts from such websites.
+                        </p>
+                        <p class="mb-5">
+                            Open Source fonts are the property of their respective designers and are governed by the SIL Open Font License (OFL). The design sources of Open Source fonts are public, meaning anyone can modify the original fonts, recompile and redistribute them. You
+                            might see that some of the open source fonts that are offered on Fontshare are also available on other websites. But unlike other websites who host whatever they find, Fontshare identifies top-notch open source fonts, reviews
+                            their quality, fixes design or technical bugs, and hosts the latest versions on Fontshare. If you see an open source font hosted on Fontshare, you can rest assured that it’s the latest version and a free font of the highest
+                            standard.
+                        </p>
+                        <p class="mb-5">
+                            If you want to learn more about open source fonts, a detailed FAQ can be found here.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top border-bottom py-3 faqAcardeon">
+                <div class="closeOpenBtns align-items-center justify-content-end gap-5 position-absolute end-0 me-5">
+                    <p class="mb-0 btn fw-bold">Copy link</p>
+                    <p class="mb-0 btn fw-bold openBtn">Open</p>
+                    <p class="mb-0 btn fw-bold closeBtn">Close</p>
+                </div>
+                <h1 class="mt-4 py-4 acardeonButton">Who designs the fonts on Fontshare?</h1>
+                <div class="row py-4 acardeonContents">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6 h2">
+                        <p class="mb-5">
+                            All Closed Source fonts are created by the Type Designers who work for the Indian Type Foundry and who have designed all our other commercial fonts available on ITF. They have been paid in full, upfront for the amazing work they do. You can learn more
+                            about our designers on ITF's website.
+                        </p>
+                        <p class="mb-5">
+                            All Open Source fonts are designed and owned by their respective designers or foundries.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top border-bottom py-3 faqAcardeon">
+                <div class="closeOpenBtns align-items-center justify-content-end gap-5 position-absolute end-0 me-5">
+                    <p class="mb-0 btn fw-bold">Copy link</p>
+                    <p class="mb-0 btn fw-bold openBtn">Open</p>
+                    <p class="mb-0 btn fw-bold closeBtn">Close</p>
+                </div>
+                <h1 class="mt-4 py-4 acardeonButton">How do Fontshare make money?</h1>
+                <div class="row py-4 acardeonContents">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6 h2">
+                        <p class="mb-5">
+                            Fontshare does not make money. The entire service (fonts, website, development, hosting, servers, support etc.) is fully sponsored by the ITF in order to make quality fonts accessible to everyone for free.
+                        </p>
+                        <p class="mb-5">
+                            It’s not new for ITF to offer its services for a good cause. We’ve been licensing our fonts for free to students, educational institutions and to non-profit organizations for years now.
+                        </p>
+                        <p class="mb-5">
+                            Between 2014-2016, we also released several open-source fonts, including Poppins (which these days, can be found on most tech startup websites), Rajdhani, Khand, Hind and Teko to name just a few.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top border-bottom py-3 faqAcardeon">
+                <div class="closeOpenBtns align-items-center justify-content-end gap-5 position-absolute end-0 me-5">
+                    <p class="mb-0 btn fw-bold">Copy link</p>
+                    <p class="mb-0 btn fw-bold openBtn">Open</p>
+                    <p class="mb-0 btn fw-bold closeBtn">Close</p>
+                </div>
+                <h1 class="mt-4 py-4 acardeonButton">How do I submit fonts to Fontshare?</h1>
+                <div class="row py-4 acardeonContents">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6 h2">
+                        <p class="mb-5">
+                            Fontshare is a curated collection of free fonts of the highest standard. In order to maintain the quality, we do not allow everyone to upload fonts on our platform. However, if you have a design that you’d like to distribute for free, please email us:
+                            fontshare[at]indiantypefoundry.com.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top border-bottom py-3 faqAcardeon">
+                <div class="closeOpenBtns align-items-center justify-content-end gap-5 position-absolute end-0 me-5">
+                    <p class="mb-0 btn fw-bold">Copy link</p>
+                    <p class="mb-0 btn fw-bold openBtn">Open</p>
+                    <p class="mb-0 btn fw-bold closeBtn">Close</p>
+                </div>
+                <h1 class="mt-4 py-4 acardeonButton">Are you going to add fonts for other world languages?</h1>
+                <div class="row py-4 acardeonContents">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6 h2">
+                        <p class="mb-5">
+                            For now, we are just focusing on the Latin-based languages, however, we plan to expand the selection of fonts to include other world languages.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top border-bottom py-3 faqAcardeon">
+                <div class="closeOpenBtns align-items-center justify-content-end gap-5 position-absolute end-0 me-5">
+                    <p class="mb-0 btn fw-bold">Copy link</p>
+                    <p class="mb-0 btn fw-bold openBtn">Open</p>
+                    <p class="mb-0 btn fw-bold closeBtn">Close</p>
+                </div>
+                <h1 class="mt-4 py-4 acardeonButton">How are Fontshare fonts different from other free fonts available on the internet?</h1>
+                <div class="row py-4 acardeonContents">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6 h2">
+                        <p class="mb-5">
+                            Most free fonts that are available online are of a poor quality. We pride ourselves on the quality and technical specification of all the fonts offered on Fontshare. You can determine the quality of a typeface by examining the drawing of letters, spacing,
+                            kerning, OpenType features, character sets, language support, the availability of weights, italics and newer font formats, such as variable fonts.
+                        </p>
+                        <p class="mb-5">
+                            All “Closed Source” fonts have undergone a thorough design process and are proprietary freeware designed, produced and owned by the Indian Type Foundry (ITF). These fonts have the same quality as ITF’s other commercial fonts. All Closed Source fonts are
+                            exclusive to Fontshare and are governed by ITF’s Free Font License (FFL).
+                        </p>
+                        <p class="mb-5">
+                            All Open Source fonts are not designed or owned by ITF, however, we make sure that these fonts go through our strict selection process before appearing on Fontshare. We only offer fonts from reputable foundries and designers that are original, have the
+                            highest design standards and are 100% free for both Commercial and Personal use.
+                        </p>
+                        <p class="mb-5">
+                            All Open Source fonts are governed by the SIL Open Font License (OFL). A large proportion of the free fonts available online are ripped-off versions of proprietary fonts and do not have enough information about the creator, so there is always the threat
+                            of legal action being taken by the original owner. This is why we do not distribute fonts that have dubious origins, have vague licensing terms, are partially free, or are just free for personal use. All Fontshare fonts are
+                            100% free for personal and commercial use and are backed by a proper EULA. Using Fontshare fonts means that you’re legally protected.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top border-bottom py-3 faqAcardeon">
+                <div class="closeOpenBtns align-items-center justify-content-end gap-5 position-absolute end-0 me-5">
+                    <p class="mb-0 btn fw-bold">Copy link</p>
+                    <p class="mb-0 btn fw-bold openBtn">Open</p>
+                    <p class="mb-0 btn fw-bold closeBtn">Close</p>
+                </div>
+                <h1 class="mt-4 py-4 acardeonButton">What is the difference between “Closed Source” and “Open Source” fonts?</h1>
+                <div class="row py-4 acardeonContents">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6 h2">
+                        <p class="mb-5">
+                            Both Open Source and Closed source fonts on Fontshare are 100% free for Commercial and Personal use, however, they are both governed by two separate EULAs.
+                        </p>
+                        <p class="mb-5">
+                            Closed Source fonts on Fonthsare are proprietary freeware designed, produced and owned by the Indian Type Foundry (ITF), and are governed by the ITF’s Free Font License (FFL). The design source of Closed Source fonts are not public and they cannot be
+                            modified or redistributed by other free font websites. Users must use the fonts supplied by ITF on the Fontshare platform as they appear. These fonts are also available exclusively on Fontshare, meaning you won’t find them
+                            anywhere else. If you see a website distributing one of our Closed Source fonts, they’re distributing it illegally and you should refrain from downloading our fonts from such websites.
+                        </p>
+                        <p class="mb-5">
+                            Open Source fonts are the property of their respective designers and are governed by the SIL Open Font License (OFL). The design sources of Open Source fonts are public, meaning anyone can modify the original fonts, recompile and redistribute them. You
+                            might see that some of the open source fonts that are offered on Fontshare are also available on other websites. But unlike other websites who host whatever they find, Fontshare identifies top-notch open source fonts, reviews
+                            their quality, fixes design or technical bugs, and hosts the latest versions on Fontshare. If you see an open source font hosted on Fontshare, you can rest assured that it’s the latest version and a free font of the highest
+                            standard.
+                        </p>
+                        <p class="mb-5">
+                            If you want to learn more about open source fonts, a detailed FAQ can be found here.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Technical">
+            <h3 class="my-5">Technical</h3>
+            <div class="border-top border-bottom py-3 faqAcardeon">
+                <div class="closeOpenBtns align-items-center justify-content-end gap-5 position-absolute end-0 me-5">
+                    <p class="mb-0 btn fw-bold">Copy link</p>
+                    <p class="mb-0 btn fw-bold openBtn">Open</p>
+                    <p class="mb-0 btn fw-bold closeBtn">Close</p>
+                </div>
+                <h1 class="mt-4 py-4 acardeonButton">What is Fontshare?</h1>
+                <div class="row py-4 acardeonContents">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6 h2">
+                        <p class="mb-5">
+                            Fontshare is a free fonts service founded by the Indian Type Foundry (ITF). Fontshare offers professional grade fonts that are free for personal and commercial use. You can either use a CSS code to access fonts directly from the Fontshare API, download
+                            an offline kit and self-host them or use them on your desktop to create anything you like.
+                        </p>
+                        <p class="mb-5">
+                            Currently there are two types of free fonts offered on Fontshare: “Closed Source” and “Open Source”. Closed Source fonts are proprietary freeware designed, produced and owned by the parent company of Fontshare, the Indian Type Foundry (ITF) and are governed
+                            by ITF’s Free Font License (FFL).
+                        </p>
+                        <p class="mb-5">
+                            Closed Source fonts are also exclusive to Fontshare, meaning you won’t find them anywhere else on the internet.
+                        </p>
+                        <p class="mb-5">
+                            Open Source fonts, on the other hand, are the property of their respective designers and publishers, and are governed by SIL Open Font License (OFL). Fontshare identifies top notch open source fonts from the internet, reviews their quality, fixes design
+                            or technical bugs, and hosts the latest versions on Fontshare so you don’t have to go anywhere else. All the fonts offered on Fontshare are free fonts of the highest standard.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top border-bottom py-3 faqAcardeon">
+                <div class="closeOpenBtns align-items-center justify-content-end gap-5 position-absolute end-0 me-5">
+                    <p class="mb-0 btn fw-bold">Copy link</p>
+                    <p class="mb-0 btn fw-bold openBtn">Open</p>
+                    <p class="mb-0 btn fw-bold closeBtn">Close</p>
+                </div>
+                <h1 class="mt-4 py-4 acardeonButton">How are Fontshare fonts different from other free fonts available on the internet?</h1>
+                <div class="row py-4 acardeonContents">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6 h2">
+                        <p class="mb-5">
+                            Most free fonts that are available online are of a poor quality. We pride ourselves on the quality and technical specification of all the fonts offered on Fontshare. You can determine the quality of a typeface by examining the drawing of letters, spacing,
+                            kerning, OpenType features, character sets, language support, the availability of weights, italics and newer font formats, such as variable fonts.
+                        </p>
+                        <p class="mb-5">
+                            All “Closed Source” fonts have undergone a thorough design process and are proprietary freeware designed, produced and owned by the Indian Type Foundry (ITF). These fonts have the same quality as ITF’s other commercial fonts. All Closed Source fonts are
+                            exclusive to Fontshare and are governed by ITF’s Free Font License (FFL).
+                        </p>
+                        <p class="mb-5">
+                            All Open Source fonts are not designed or owned by ITF, however, we make sure that these fonts go through our strict selection process before appearing on Fontshare. We only offer fonts from reputable foundries and designers that are original, have the
+                            highest design standards and are 100% free for both Commercial and Personal use.
+                        </p>
+                        <p class="mb-5">
+                            All Open Source fonts are governed by the SIL Open Font License (OFL). A large proportion of the free fonts available online are ripped-off versions of proprietary fonts and do not have enough information about the creator, so there is always the threat
+                            of legal action being taken by the original owner. This is why we do not distribute fonts that have dubious origins, have vague licensing terms, are partially free, or are just free for personal use. All Fontshare fonts are
+                            100% free for personal and commercial use and are backed by a proper EULA. Using Fontshare fonts means that you’re legally protected.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top border-bottom py-3 faqAcardeon">
+                <div class="closeOpenBtns align-items-center justify-content-end gap-5 position-absolute end-0 me-5">
+                    <p class="mb-0 btn fw-bold">Copy link</p>
+                    <p class="mb-0 btn fw-bold openBtn">Open</p>
+                    <p class="mb-0 btn fw-bold closeBtn">Close</p>
+                </div>
+                <h1 class="mt-4 py-4 acardeonButton">What is the difference between “Closed Source” and “Open Source” fonts?</h1>
+                <div class="row py-4 acardeonContents">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6 h2">
+                        <p class="mb-5">
+                            Both Open Source and Closed source fonts on Fontshare are 100% free for Commercial and Personal use, however, they are both governed by two separate EULAs.
+                        </p>
+                        <p class="mb-5">
+                            Closed Source fonts on Fonthsare are proprietary freeware designed, produced and owned by the Indian Type Foundry (ITF), and are governed by the ITF’s Free Font License (FFL). The design source of Closed Source fonts are not public and they cannot be
+                            modified or redistributed by other free font websites. Users must use the fonts supplied by ITF on the Fontshare platform as they appear. These fonts are also available exclusively on Fontshare, meaning you won’t find them
+                            anywhere else. If you see a website distributing one of our Closed Source fonts, they’re distributing it illegally and you should refrain from downloading our fonts from such websites.
+                        </p>
+                        <p class="mb-5">
+                            Open Source fonts are the property of their respective designers and are governed by the SIL Open Font License (OFL). The design sources of Open Source fonts are public, meaning anyone can modify the original fonts, recompile and redistribute them. You
+                            might see that some of the open source fonts that are offered on Fontshare are also available on other websites. But unlike other websites who host whatever they find, Fontshare identifies top-notch open source fonts, reviews
+                            their quality, fixes design or technical bugs, and hosts the latest versions on Fontshare. If you see an open source font hosted on Fontshare, you can rest assured that it’s the latest version and a free font of the highest
+                            standard.
+                        </p>
+                        <p class="mb-5">
+                            If you want to learn more about open source fonts, a detailed FAQ can be found here.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top border-bottom py-3 faqAcardeon">
+                <div class="closeOpenBtns align-items-center justify-content-end gap-5 position-absolute end-0 me-5">
+                    <p class="mb-0 btn fw-bold">Copy link</p>
+                    <p class="mb-0 btn fw-bold openBtn">Open</p>
+                    <p class="mb-0 btn fw-bold closeBtn">Close</p>
+                </div>
+                <h1 class="mt-4 py-4 acardeonButton">Who designs the fonts on Fontshare?</h1>
+                <div class="row py-4 acardeonContents">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6 h2">
+                        <p class="mb-5">
+                            All Closed Source fonts are created by the Type Designers who work for the Indian Type Foundry and who have designed all our other commercial fonts available on ITF. They have been paid in full, upfront for the amazing work they do. You can learn more
+                            about our designers on ITF's website.
+                        </p>
+                        <p class="mb-5">
+                            All Open Source fonts are designed and owned by their respective designers or foundries.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top border-bottom py-3 faqAcardeon">
+                <div class="closeOpenBtns align-items-center justify-content-end gap-5 position-absolute end-0 me-5">
+                    <p class="mb-0 btn fw-bold">Copy link</p>
+                    <p class="mb-0 btn fw-bold openBtn">Open</p>
+                    <p class="mb-0 btn fw-bold closeBtn">Close</p>
+                </div>
+                <h1 class="mt-4 py-4 acardeonButton">How do Fontshare make money?</h1>
+                <div class="row py-4 acardeonContents">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6 h2">
+                        <p class="mb-5">
+                            Fontshare does not make money. The entire service (fonts, website, development, hosting, servers, support etc.) is fully sponsored by the ITF in order to make quality fonts accessible to everyone for free.
+                        </p>
+                        <p class="mb-5">
+                            It’s not new for ITF to offer its services for a good cause. We’ve been licensing our fonts for free to students, educational institutions and to non-profit organizations for years now.
+                        </p>
+                        <p class="mb-5">
+                            Between 2014-2016, we also released several open-source fonts, including Poppins (which these days, can be found on most tech startup websites), Rajdhani, Khand, Hind and Teko to name just a few.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top border-bottom py-3 faqAcardeon">
+                <div class="closeOpenBtns align-items-center justify-content-end gap-5 position-absolute end-0 me-5">
+                    <p class="mb-0 btn fw-bold">Copy link</p>
+                    <p class="mb-0 btn fw-bold openBtn">Open</p>
+                    <p class="mb-0 btn fw-bold closeBtn">Close</p>
+                </div>
+                <h1 class="mt-4 py-4 acardeonButton">How do I submit fonts to Fontshare?</h1>
+                <div class="row py-4 acardeonContents">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6 h2">
+                        <p class="mb-5">
+                            Fontshare is a curated collection of free fonts of the highest standard. In order to maintain the quality, we do not allow everyone to upload fonts on our platform. However, if you have a design that you’d like to distribute for free, please email us:
+                            fontshare[at]indiantypefoundry.com.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Privacy">
+            <h3 class="my-5">Privacy</h3>
+            <div class="border-top border-bottom py-3 faqAcardeon">
+                <div class="closeOpenBtns align-items-center justify-content-end gap-5 position-absolute end-0 me-5">
+                    <p class="mb-0 btn fw-bold">Copy link</p>
+                    <p class="mb-0 btn fw-bold openBtn">Open</p>
+                    <p class="mb-0 btn fw-bold closeBtn">Close</p>
+                </div>
+                <h1 class="mt-4 py-4 acardeonButton">What is Fontshare?</h1>
+                <div class="row py-4 acardeonContents">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6 h2">
+                        <p class="mb-5">
+                            Fontshare is a free fonts service founded by the Indian Type Foundry (ITF). Fontshare offers professional grade fonts that are free for personal and commercial use. You can either use a CSS code to access fonts directly from the Fontshare API, download
+                            an offline kit and self-host them or use them on your desktop to create anything you like.
+                        </p>
+                        <p class="mb-5">
+                            Currently there are two types of free fonts offered on Fontshare: “Closed Source” and “Open Source”. Closed Source fonts are proprietary freeware designed, produced and owned by the parent company of Fontshare, the Indian Type Foundry (ITF) and are governed
+                            by ITF’s Free Font License (FFL).
+                        </p>
+                        <p class="mb-5">
+                            Closed Source fonts are also exclusive to Fontshare, meaning you won’t find them anywhere else on the internet.
+                        </p>
+                        <p class="mb-5">
+                            Open Source fonts, on the other hand, are the property of their respective designers and publishers, and are governed by SIL Open Font License (OFL). Fontshare identifies top notch open source fonts from the internet, reviews their quality, fixes design
+                            or technical bugs, and hosts the latest versions on Fontshare so you don’t have to go anywhere else. All the fonts offered on Fontshare are free fonts of the highest standard.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+
+    <footer class="d-flex position-relative justify-content-center align-items-center mt-5 text-secondary fw-bold">
+        <p class="mb-0 text-center">Copyright © 2021 — 2022 Indian Type Foundry. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let acardeonButton = Array.from(document.getElementsByClassName('acardeonButton'));
+        let openBtn = Array.from(document.getElementsByClassName('openBtn'));
+        let closeBtn = Array.from(document.getElementsByClassName('closeBtn'));
+        let secondMenuLi = Array.from(document.getElementsByClassName('secondMenuLi'));
+
+        secondMenuLi.forEach((item) => {
+            item.addEventListener('click', function() {
+                secondMenuLi.forEach((items) => {
+                    items.classList.remove('active')
+                });
+                item.classList.add('active');
+            })
+        })
+        acardeonButton.forEach((item) => {
+            item.addEventListener('click', function() {
+                item.parentElement.querySelector('.acardeonContents').classList.add('active');
+                item.parentElement.querySelector('.openBtn').classList.add('close');
+                item.parentElement.querySelector('.closeBtn').classList.add('open');
+            })
+        })
+        openBtn.forEach((item) => {
+            item.addEventListener('click', function() {
+                item.parentElement.parentElement.querySelector('.acardeonContents').classList.add('active');
+                item.classList.add('close');
+                item.nextElementSibling.classList.add('open')
+            })
+        })
+        closeBtn.forEach((item) => {
+            item.addEventListener('click', function() {
+                item.parentElement.parentElement.querySelector('.acardeonContents').classList.remove('active');
+                item.classList.remove('open')
+                item.previousElementSibling.classList.remove('close')
+            })
+        })
+    </script>
+    <script src="js/script.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
